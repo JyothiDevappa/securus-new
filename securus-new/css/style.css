@@ -2479,22 +2479,6 @@
  ====================================================================
  
  ***/
- .brand-one {
-     position: relative;
-     display: block;
-     padding: 90px 0;
-     border-bottom: 1px solid #f5f0e9;
- }
- 
- .single_brand_item img {
-     width: auto !important;
-     opacity: 0.3;
-     -webkit-transition: all 500ms ease;
-     transition: all 500ms ease;
- }
- .single_brand_item img:hover {
-     opacity: 0.6;
- }
  
  
  /*** 
@@ -4962,9 +4946,69 @@
 .service-card:hover {
   transform: translateY(-5px);
 }
+.service-card .btn {
+  border-radius: 15px;
+  padding: 4px 10px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  width: 250px; /* You can change this value */
+  margin: 10px auto; /* Centers the button horizontally */
+}
 
 
 
+/* ========== Common Section Styles ========== */
+.clients-section {
+  background-color: #fff;
+}
 
+.recognitions-section {
+  background-color: #f6f9fb;
+}
+
+.top-subtitle {
+  color: #007bff;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #222;
+}
+.recognition-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #222;
+
+}
+
+.divider {
+  width: 400px;
+  height: 4px;
+  background-color: #f2c200;
+  margin: 15px auto;
+    margin-bottom: 60px; /* 👉 Add space below title */
+
+}
+
+.client-img{
+  max-height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  transition: filter 0.3s ease;
+}
+.recognition-img {
+  max-height: 150px;
+  max-width: 150px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  transition: filter 0.3s ease;
+}
 
 
