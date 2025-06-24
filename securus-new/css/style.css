@@ -4923,9 +4923,12 @@
   font-weight: 600;
 }
 
+
 .service-card img {
   margin: 0 auto 15px; 
   display: block;
+    background: transparent; /* optional, forces no bg */
+
 }
 
 .row.g-4 {
@@ -4942,8 +4945,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 25px;
-    min-height: 500px; /* Slightly taller card */
-
+  min-height: 500px; /* Slightly taller card */
   text-align: center;
   transition: 0.3s;
   flex: 1;
