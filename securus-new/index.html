@@ -902,18 +902,16 @@ We combine physical presence with cutting-edge monitoring to deliver comprehensi
 <script src="js/parallax.min.js"></script>
 <script src="js/custom.js"></script>
 
-
 <div id="footer-placeholder"></div>
-<!-- Footer Section -->
-<div id="footer-container"></div>
-
+<!-- at bottom before </body> -->
 <script>
-  fetch('securus-new/footer.html')
-    .then(response => response.text())
+  fetch("footer.html")
+    .then(res => res.text())
     .then(data => {
-      document.getElementById('footer-container').innerHTML = data;
+      document.getElementById("footer-placeholder").innerHTML = data;
     });
 </script>
+
 
 
 

@@ -1221,8 +1221,9 @@
 <script src="js/parallax.min.js"></script>
 <script src="js/custom.js"></script>
 
-<div id="footer-placeholder"></div>
 
+<!-- linked the footer-->
+<div id="footer-placeholder"></div>
 <script>
   fetch("footer.html")
     .then(res => res.text())
@@ -1230,7 +1231,6 @@
       document.getElementById("footer-placeholder").innerHTML = data;
     });
 </script>
-
 
 
 </body>
