@@ -599,7 +599,9 @@ Focusing on training competency and operational capability, SECURUS ties up with
     </section>
 
     
-    <!--End video Two Section --> <!--Start Latest Projects One Section 
+    <!--End video Two Section --> <!--Start Latest Projects One Section  -->
+
+
 <section class="latest-projects-one-section">
 <div class="latest-projects-one-bg" style="background-image: url(images/background/project-1-bg.png)"></div>
 
@@ -644,9 +646,8 @@ We combine physical presence with cutting-edge monitoring to deliver comprehensi
             </div>
         </div>
     </section>
-    <!--Start Latest Projects One Section --><!--Start Testimonials One Section --> 
+
  
-    <!--End Testimonials One Section --> <!--Start Blog One Section -->
 
    
 
@@ -869,7 +870,7 @@ We combine physical presence with cutting-edge monitoring to deliver comprehensi
             </div>
         </div>
     </footer>    -->
-    <!--End Footer Section --></div><!-- /.page-wrapper -->
+    <!--End Footer Section --><!-- /.page-wrapper -->
 
 
  <!-- Mobile Menu  -->
@@ -903,14 +904,19 @@ We combine physical presence with cutting-edge monitoring to deliver comprehensi
 
 
 <div id="footer-placeholder"></div>
+<!-- Footer Section -->
+<div id="footer-container"></div>
 
 <script>
-  fetch("footer.html")
-    .then(res => res.text())
+  fetch('securus-new/footer.html')
+    .then(response => response.text())
     .then(data => {
-      document.getElementById("footer-placeholder").innerHTML = data;
+      document.getElementById('footer-container').innerHTML = data;
     });
 </script>
+
+
+
 </body>
 
 
