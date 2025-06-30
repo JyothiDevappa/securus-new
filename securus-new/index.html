@@ -63,6 +63,38 @@
     z-index: 2;
     pointer-events: none;
 }
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 40s linear infinite;
+}
+
+.logo-track img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 30px;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
 </style>
 </head>
 
@@ -270,7 +302,7 @@
                             <span class="flaticon-team"></span>
                         </div>
                         <h3>Integrated Training</h3>
-                        <p>Lorem ipsum dolor amet consectetur adipisicing elit sed eiusmod tempor.</p>
+                        <p>Securus strongly believe in the importance of human capital as it is critical to an organisation's performance and success. Securus established it's training centre on 12 April 2011 and ever since conducted in-house traning for all it's employees..</p>
                     </div>
                 </div>
             </div>
@@ -554,7 +586,7 @@ Focusing on training competency and operational capability, SECURUS ties up with
                 <div class="col-xl-12">
                     <div class="video-two-sec-inner">
                         <div class="video-two-sec-icon">
-                            <a href="https://www.youtube.com/watch?v=XmRSCXwHiAo" class="video-two-sec-btn video-popup"><i class="fa fa-play"></i></a>
+<a href="https://www.youtube.com/watch?v=XmRSCXwHiAo" class="video-two-sec-btn video-popup"><i class="fa fa-play"></i></a>
                         </div>
                         <div class="video-two-sec-content">
                             <h2>We offer best <span>industrial services.</span> <br> 25+ years of experience</h2>
@@ -565,40 +597,50 @@ Focusing on training competency and operational capability, SECURUS ties up with
             </div>
         </div>
     </section>
+
+    
     <!--End video Two Section --> <!--Start Latest Projects One Section -->
 <section class="latest-projects-one-section">
-       <div class="latest-projects-one-bg" style="background-image: url(images/background/project-1-bg.png)"></div>
-        <div class="container">
-            <div class="row">
+<div class="latest-projects-one-bg" style="background-image: url(images/background/project-1-bg.png)"></div>
+
+<div class="container">
+<div class="row">
+
                 <div class="col-xl-4">
                     <div class="latest-pro-one-title">
                         <h4 class="sub-title-shape-left section_title-subheading">Industrial Sector</h4>
                         <h2>Our Industry Competence</h2>
-                        <p>Manufacturing Technology Supports Factories around the World. Factories are at the heart of manufacturing.</p>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="latest-pro-one-single">
-                        <div class="latest-pro-one-img-box">
-                            <img src="images/project/project-1-img-1.jpg" alt="">
-                            <div class="latest-pro-one-img-title">
-                                <div class="content"><h5><a href="#">Metal & Materials</a></h5></div>
-                                <div class="icon"><a class="img-popup" href="images/project/project-1-img-1.jpg"><span class="flaticon-plus"></span></a></div>
+                        <p>With over a decade of experience, Securus has served a wide range of industries with tailored security solutions.
+From residential communities to critical infrastructure, we understand the unique demands of each sector.
+Our teams are trained to operate in dynamic environments, ensuring compliance, vigilance, and reliability.
+We combine physical presence with cutting-edge monitoring to deliver comprehensive protection.</p>
+</div>
+</div>
+            <div class="col-xl-4">
+
+                 <div class="latest-pro-one-single">
+        <div class="latest-pro-one-img-box" style="height: 810px; overflow: hidden;">
+            <img src="images/project/shadow.jpg" alt="" style="height: 100%; width: 100%; object-fit: cover;">
+            <div class="latest-pro-one-img-title">
+                                <div class="content"><h5><a href="#">More</a></h5></div>
+                                <div class="icon"><a class="img-popup" href="images/project/shadow.jpg"><span class="flaticon-plus"></span></a></div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-xl-4">
                     <div class="latest-pro-one-single">
                         <div class="latest-pro-one-img-box">
-                            <img src="images/project/project-1-img-2.jpg" alt="">
+                            <img src="images/project/projject-3.jpg" alt="">
                             <div class="latest-pro-one-img-title">
-                                <div class="content"><h5><a href="#">Welding Industry</a></h5></div>
-                                <div class="icon"><a class="img-popup" href="images/project/project-1-img-1.jpg"><span class="flaticon-plus"></span></a></div>
+                                <div class="content"><h5><a href="#">More</a></h5></div>
+                                <div class="icon"><a class="img-popup" href="images/project/projject-3.jpg"><span class="flaticon-plus"></span></a></div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -619,23 +661,23 @@ Focusing on training competency and operational capability, SECURUS ties up with
         <div class="service-card">
           <img src="images/security/img-1.png" class="mb-3" width="60" alt="icon">
           <h5>Security Guarding Services</h5>
-          <p class="text-muted small">We provide trained and qualified security officers to clients across the various types of building development including Industrial, Commercial, Residential, Healthcare Facilities, Hotels, Educational Facilities, Religious Buildings & Others.</p>
+          <p class="text-muted small">  We deploy licensed and professionally trained security officers across a wide range of sectors—including industrial parks, commercial offices, residential estates, healthcare institutions, hotels, schools, religious facilities, and more. Our guards ensure a safe, secure, and controlled environment at all times </p>
           <button class="btn btn-dark btn-sm mt-2">Read More</button>
         </div>
       </div>
       <div class="col-md-4">
         <div class="service-card">
           <img src="images/security/img-2.png" class="mb-3" width="60" alt="icon">
-          <h5>Security Audits & Consultancy Services</h5>
-          <p class="text-muted small">Given the years of experience in the industry, we can provide a comprehensive plan to ensure that the safety and security of our clients are never compromised.</p>
+          <h5>Security Audits & Consultancy</h5>
+          <p class="text-muted small"> With years of on-ground experience, we offer detailed security risk assessments and expert consultancy services. Our tailored audit plans help identify vulnerabilities and enhance your overall security posture, ensuring peace of mind and operational continuity. </p>
           <button class="btn btn-dark btn-sm mt-2">Read More</button>
         </div>
       </div>
       <div class="col-md-4">
         <div class="service-card">
           <img src="images/security/img-3.png" class="mb-3" width="60" alt="icon">
-          <h5>Security Technology Equipment & Solutions</h5>
-          <p class="text-muted small">We embrace changes in technology and incorporate them to provide value-adding services and solutions to our clients beyond just providing physical security services.</p>
+          <h5>Security Technology Solutions</h5>
+          <p class="text-muted small"> We integrate advanced surveillance systems, alarm sensors, and access control devices to strengthen your security framework. Our tech-driven approach complements physical guarding, delivering smart, responsive, and scalable protection solutions.</p>
           <button class="btn btn-dark btn-sm mt-2">Read More</button>
         </div>
       </div>
@@ -644,108 +686,83 @@ Focusing on training competency and operational capability, SECURUS ties up with
   </section>
 
 <!--End Blog One Section --> <!--Start Brand One Section -->   
-
 <!-- ===================== Prestigious Clients Section Start ===================== -->
 <!-- ===================== CLIENT LOGO CAROUSEL ===================== -->
+
 <section class="clients-section text-center py-5">
   <div class="container">
     <p class="top-subtitle">OUR PORTFOLIO</p>
     <h2 class="section-title">Some Of Our Prestigious Clients...</h2>
     <div class="divider"></div>
 
-<div id="clientCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="3000">
-      <div class="carousel-inner">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="row justify-content-center">
-            <div class="col-md-3 col-6">
-              <img src="images/brand/brand-1.jpeg" class="client-img img-fluid" alt="Logo 1">
-            </div>
-            <div class="col-md-3 col-6">
-              <img src="images/brand/brand-2.jpeg" class="client-img img-fluid" alt="Logo 2">
-            </div>
-            <div class="col-md-3 col-6">
-              <img src="images/brand/brand-3.jpeg" class="client-img img-fluid" alt="Logo 3">
-            </div>
-            <div class="col-md-3 col-6">
-              <img src="images/brand/brand-4.jpeg" class="client-img img-fluid" alt="Logo 4">
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="row justify-content-center">
-            <div class="col-md-3 col-6">
-              <img src="images/brand/brand-5.jpeg" class="client-img img-fluid" alt="Logo 5">
-            </div>
-            <div class="col-md-3 col-6">
-              <img src="images/brand/brand-6.jpeg" class="client-img img-fluid" alt="Logo 6">
-            </div>
-            <div class="col-md-3 col-6">
-              <img src="images/brand/brand-7.jpeg" class="client-img img-fluid" alt="Logo 7">
-            </div>
-            <div class="col-md-3 col-6">
-              <img src="images/brand/brand-8.jpeg" class="client-img img-fluid" alt="Logo 8">
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Add more slides as needed -->
-
+    <div class="logo-slider">
+      <div class="logo-track">
+        <img src="images/brand/brand-1.jpeg" alt="Logo 1">
+        <img src="images/brand/brand-2.jpeg" alt="Logo 2">
+        <img src="images/brand/brand-3.jpeg" alt="Logo 3">
+        <img src="images/brand/brand-4.jpeg" alt="Logo 4">
+        <img src="images/brand/brand-5.jpeg" alt="Logo 5">
+        <img src="images/brand/brand-6.jpeg" alt="Logo 6">
+        <img src="images/brand/brand-7.jpeg" alt="Logo 7">
+        <img src="images/brand/brand-8.jpeg" alt="Logo 8">
+        
+        <!-- Duplicate for loop effect -->
+        <img src="images/brand/brand-1.jpeg" alt="Logo 1">
+        <img src="images/brand/brand-2.jpeg" alt="Logo 2">
+        <img src="images/brand/brand-3.jpeg" alt="Logo 3">
+        <img src="images/brand/brand-4.jpeg" alt="Logo 4">
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== RECOGNITION SECTION ===================== 
+
+<!-- ===================== RECOGNITION SECTION ===================== -->
+ 
 <section class="recognitions-section py-5">
   <div class="container text-center">
     <h2 class="recognition-title">Our Recognitions and Credentials</h2>
     <div class="divider"></div>
 
     <div class="row justify-content-center align-items-center mt-4 g-3">
-      <div class="col-md-1 col-4">
+      <div class="col-md-2 col-4">
         <img src="images/brand/brand-1.jpeg" class="recognition-img img-fluid" alt="Rec 1">
       </div>
-      <div class="col-md-1 col-4">
+<div class="col-md-2 col-4">
         <img src="images/brand/brand-2.jpeg" class="recognition-img img-fluid" alt="Rec 2">
       </div>
-      <div class="col-md-1 col-4">
+<div class="col-md-2 col-4">
         <img src="images/brand/brand-3.jpeg" class="recognition-img img-fluid" alt="Rec 3">
       </div>
-      <div class="col-md-1 col-4">
+<div class="col-md-2 col-4">
         <img src="images/brand/brand-4.jpeg" class="recognition-img img-fluid" alt="Rec 4">
       </div>
-      <div class="col-md-1 col-4">
+<div class="col-md-2 col-4">
         <img src="images/brand/brand-5.jpeg" class="recognition-img img-fluid" alt="Rec 5">
       </div>
-      <div class="col-md-1 col-4">
-        <img src="images/brand/brand-6.jpeg" class="recognition-img img-fluid" alt="Rec 6">
-      </div>
-      <div class="col-md-1 col-4">
+
+<div class="col-md-2 col-4">
         <img src="images/brand/brand-7.jpeg" class="recognition-img img-fluid" alt="Rec 7">
       </div>
     </div>
   </div>
 </section>
--->
-    <!--End Brand One Section -->      
+
+
+
 
 <!--Start Footer Section -->
-
+<!--
 <footer class="footer-section">
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="footer-widget-single footer-widget-about">
                         <div class="footer-widget-title">
-<!--                            <h3>About Us</h3>-->
+                           <h3>About Us</h3>
                         </div>
                         <div class="footer-widget-about-text">
-<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>-->
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                             <img src="images/logo.png">
                         </div>
                         <div class="footer-widget-about-social">
@@ -850,7 +867,7 @@ Focusing on training competency and operational capability, SECURUS ties up with
                 </div>
             </div>
         </div>
-    </footer>   
+    </footer>    -->
     <!--End Footer Section --></div><!-- /.page-wrapper -->
 
 
@@ -881,7 +898,19 @@ Focusing on training competency and operational capability, SECURUS ties up with
 <script src="js/TweenMax.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/parallax.min.js"></script>
-<script src="js/custom.js"></script></body>
+<script src="js/custom.js"></script>
+
+
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+</body>
 
 
 <!-- Mirrored from thememxpro.com/php-template/hactora/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 17:25:09 GMT -->

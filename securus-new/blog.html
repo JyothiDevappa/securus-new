@@ -432,7 +432,7 @@
     <!--End Newsletter One Section --> 
         
     <!--Start Footer Section -->
-<footer class="footer-section">
+<!-- <footer class="footer-section">
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
@@ -543,7 +543,7 @@
                 </div>
             </div>
         </div>
-    </footer>   
+    </footer>    -->
     <!--End Footer Section -->    </div><!-- /.page-wrapper -->
 
 
@@ -574,7 +574,19 @@
 <script src="js/TweenMax.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/parallax.min.js"></script>
-<script src="js/custom.js"></script></body>
+<script src="js/custom.js"></script>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
 
 
 <!-- Mirrored from thememxpro.com/php-template/hactora/blog.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 17:25:26 GMT -->

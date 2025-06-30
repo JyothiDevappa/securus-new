@@ -616,7 +616,19 @@
 <script src="js/TweenMax.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/parallax.min.js"></script>
-<script src="js/custom.js"></script></body>
+<script src="js/custom.js"></script>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
 
 
 <!-- Mirrored from thememxpro.com/php-template/hactora/blog-details.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 17:25:30 GMT -->
