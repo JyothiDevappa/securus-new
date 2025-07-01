@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Mirrored from thememxpro.com/php-template/hactora/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 17:24:51 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
@@ -7,14 +9,19 @@
 <meta charset="utf-8">
 <title>Securus || Be Safe and Secured</title>
 <!-- Stylesheets -->
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap.css" rel="stylesheet">
+
 <link href="css/magnific-popup.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
 
+
+
+
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
 
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
@@ -24,7 +31,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-    <style>.video-banner-wrapper {
+
+
+
+    <style>
+    
+    .video-banner-wrapper {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -92,13 +104,60 @@
   }
 }
 
+/* Center team cards on all devices */
+.team-one-section .row {
+    justify-content: center; /* Bootstrap flex alignment */
+}
+
+/* Make each team card centered on mobile */
+.team-one-section .col-md-6 {
+    display: flex;
+    justify-content: center;
+}
+
+/* expirence team members */
+@media (max-width: 575.98px) {
+    .team-one-section .team-one-single {
+        width: 90%;   /* shrink slightly to avoid touching edges */
+    }
+}
+
+
+
+
+@media (max-width: 767.98px) {
+  .funfacts-one-section .col-md-6 {
+    margin-bottom: 30px; /* this creates real gap between rows */
+  }
+
+  .funfacts-one-single {
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 15px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
 
 
 
 </style>
+
 </head>
 
 <body>
+
+      <div class="page-wrapper">
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
@@ -241,6 +300,7 @@
        <div class="nav-overlay">
        </div>
    </header>
+   
    <!-- End Main Header -->
 <!-- Bnner Section -->
 <section class="banner-section wow fadeIn">
@@ -365,6 +425,8 @@ Focusing on training competency and operational capability, SECURUS ties up with
             </div>
         </div>
     </section>    
+
+
     <!-- End About Two Section --><!--Start Funfacts One Section --> 
 <section class="funfacts-one-section" style="background-image: url(images/background/funfact-1-bg.jpg)">
         <div class="container">
@@ -379,7 +441,7 @@ Focusing on training competency and operational capability, SECURUS ties up with
                             <h2>
                                 <span class="timer" data-from="1" data-to="378" data-speed="5000" data-refresh-interval="50">100+</span>
                             </h2>
-                            <p>Satisfied Clients</p>
+                            <p>Year Founded</p>
                         </div>
                     </div>
                 </div>
@@ -393,7 +455,7 @@ Focusing on training competency and operational capability, SECURUS ties up with
                             <h2>
                                 <span class="timer" data-from="1" data-to="780" data-speed="5000" data-refresh-interval="50">200+</span>
                             </h2>
-                            <p>Security Officers</p>
+                            <p>Number of Clients Served</p>
                         </div>
                     </div>
                 </div>
@@ -407,7 +469,7 @@ Focusing on training competency and operational capability, SECURUS ties up with
                             <h2>
                                 <span class="timer" data-from="1" data-to="189" data-speed="5000" data-refresh-interval="50">1021</span>
                             </h2>
-                            <p>Camera Installed</p>
+                            <p>Number of Sites </p>
                         </div>
                     </div>
                 </div>
@@ -421,7 +483,7 @@ Focusing on training competency and operational capability, SECURUS ties up with
                             <h2>
                                 <span class="timer" data-from="1" data-to="189" data-speed="5000" data-refresh-interval="50">189</span>
                             </h2>
-                            <p>Expert Members</p>
+                            <p>Number of Officers</p>
                         </div>
                     </div>
                 </div>
@@ -483,101 +545,111 @@ Focusing on training competency and operational capability, SECURUS ties up with
         </div>
     </section>  
     <!--End Main Service Two Section -->    <!--Start Team One Section -->   
-<section class="team-one-section two">
-        <div class="container">
-            <div class="thm-section-title text-center">
-                <h4 class="sub-title-shape-left section_title-subheading">Meet Our Team</h4>
-                <h2>Experience Team Members</h2>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-6">
-<!--                    Team One Single-->
-<!--
-                    <div class="team-one-single wow fadeInLeft" data-wow-delay="100ms">
-                        <div class="team-one-img">
-                            <img src="images/team/team-1-img-1.jpg" alt="">
-                            <div class="team-one-hover">
-                                <div class="team-one-social">
-                                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-one-content">
-                            <h3>David Parker</h3>
-                            <p>Engineer</p>
-                        </div>
-                    </div>
--->
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <!--Team One Single-->
-                    <div class="team-one-single wow fadeInLeft" data-wow-delay="200ms">
-                        <div class="team-one-img">
-                            <img src="images/team/Director.jpeg" alt="">
-                            <div class="team-one-hover">
-                                <div class="team-one-social">
-                                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-one-content">
-                            <h3>Malathi Balakrishnan</h3>
-                            <p>Director</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <!--Team One Single-->
-                    <div class="team-one-single wow fadeInLeft" data-wow-delay="300ms">
-                        <div class="team-one-img">
-                            <img src="images/team/ASSit.jpeg" alt="">
-                            <div class="team-one-hover">
-                                <div class="team-one-social">
-                                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-one-content">
-                            <h3>Aharvin Sandrasegran</h3>
-                            <p>Managing Director</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <!--Team One Single-->
-<!--
-                    <div class="team-one-single wow fadeInLeft" data-wow-delay="400ms">
-                        <div class="team-one-img">
-                            <img src="images/team/team-1-img-4.jpg" alt="">
-                            <div class="team-one-hover">
-                                <div class="team-one-social">
-                                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-one-content">
-                            <h3>James Smith</h3>
-                            <p>Engineer</p>
-                        </div>
-                    </div>
--->
-                </div>
-            </div>
+
+
+    <section class="team-one-section two">
+    <div class="container">
+        <div class="thm-section-title text-center">
+            <h4 class="sub-title-shape-left section_title-subheading">Meet Our Team</h4>
+            <h2>Experience Team Members</h2>
         </div>
-    </section>
-    <!--End Team One Section --> <!--Start Why Choose Two Section --> 
+
+        <div class="row justify-content-center"> <!-- Added justify-content-center to center cards -->
+
+            <!--
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                Team One Single
+                <div class="team-one-single wow fadeInLeft" data-wow-delay="100ms">
+                    <div class="team-one-img">
+                        <img src="images/team/team-1-img-1.jpg" alt="">
+                        <div class="team-one-hover">
+                            <div class="team-one-social">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-one-content">
+                        <h3>David Parker</h3>
+                        <p>Engineer</p>
+                    </div>
+                </div>
+            </div>
+            -->
+
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <!--Team One Single-->
+                <div class="team-one-single wow fadeInLeft" data-wow-delay="200ms">
+                    <div class="team-one-img">
+                        <img src="images/team/Director.jpeg" alt="">
+                        <div class="team-one-hover">
+                            <div class="team-one-social">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-one-content">
+                        <h3>Malathi Balakrishnan</h3>
+                        <p>Director</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <!--Team One Single-->
+                <div class="team-one-single wow fadeInLeft" data-wow-delay="300ms">
+                    <div class="team-one-img">
+                        <img src="images/team/ASSit.jpeg" alt="">
+                        <div class="team-one-hover">
+                            <div class="team-one-social">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-one-content">
+                        <h3>Aharvin Sandrasegran</h3>
+                        <p>Managing Director</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                Team One Single
+                <div class="team-one-single wow fadeInLeft" data-wow-delay="400ms">
+                    <div class="team-one-img">
+                        <img src="images/team/team-1-img-4.jpg" alt="">
+                        <div class="team-one-hover">
+                            <div class="team-one-social">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-one-content">
+                        <h3>James Smith</h3>
+                        <p>Engineer</p>
+                    </div>
+                </div>
+            </div>
+            -->
+
+        </div>
+    </div>
+</section>
+
+
+<!--End Team One Section --> <!--Start Why Choose Two Section --> 
  
     <!--End Why Choose Two Section --><!--Start video Two Section --> 
 <section class="video-two-section" style="background-image: url(images/background/video-sec-two-bg.jpg)">
@@ -753,19 +825,18 @@ We combine physical presence with cutting-edge monitoring to deliver comprehensi
 
 
 
+
 <!--Start Footer Section -->
-<!--
-<footer class="footer-section">
+ <!-- <footer class="footer-section">
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="footer-widget-single footer-widget-about">
                         <div class="footer-widget-title">
-                           <h3>About Us</h3>
+                            <h3>About Us</h3>
                         </div>
                         <div class="footer-widget-about-text">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <img src="images/logo.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                         </div>
                         <div class="footer-widget-about-social">
                             <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -782,10 +853,9 @@ We combine physical presence with cutting-edge monitoring to deliver comprehensi
                         </div>
                         <ul class="footer-widget-useful-links-list list-unstyled">
                             <li><a href="#">About Us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="a.html">Partners</a></li>
-                            <li><a href="#">Achievements’s</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="a.html">Testimoials</a></li>
+                            <li><a href="#">Faq’s</a></li>
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
@@ -796,10 +866,9 @@ We combine physical presence with cutting-edge monitoring to deliver comprehensi
                             <h3>Contact Us</h3>
                         </div>
                         <div class="footer-widget_contact-info">
-                            <p>130 Jurong Gateway Road #04-221</p>
-                            <p>Singapore 600130</p>
-                            <a href="tel:+6568993088">+6568993088</a>
-                            <a href="mailto:info@securus.com.sg">info@securus.com.sg</a><br>  
+                            <p>Flat 20, Reynolds USA</p>
+                            <a href="tel:666-888-0000">+812 555 33 44</a>
+                            <a href="mailto:info@example.com">info@example.com</a><br>  
                         </div>
                     </div>
                 </div>
@@ -869,8 +938,16 @@ We combine physical presence with cutting-edge monitoring to deliver comprehensi
                 </div>
             </div>
         </div>
-    </footer>    -->
-    <!--End Footer Section --><!-- /.page-wrapper -->
+    </footer>   -->
+
+      <!--End Footer Section --></div><!-- /.page-wrapper -->
+
+
+
+
+
+
+
 
 
  <!-- Mobile Menu  -->
@@ -881,11 +958,13 @@ We combine physical presence with cutting-edge monitoring to deliver comprehensi
     </nav>
 </div><!-- End Mobile Menu -->
 
-<div class="nav-overlay">
-</div>
+<div class="nav-overlay"> </div>
 </header>
 <!-- End Main Header -->
-</div>
+
+
+
+ 
 <!-- /.mobile-nav__wrapper --><!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fas fa-arrow-up"></span></div><script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -902,15 +981,26 @@ We combine physical presence with cutting-edge monitoring to deliver comprehensi
 <script src="js/parallax.min.js"></script>
 <script src="js/custom.js"></script>
 
+
+
 <div id="footer-placeholder"></div>
-<!-- at bottom before </body> -->
+
 <script>
   fetch("footer.html")
     .then(res => res.text())
     .then(data => {
       document.getElementById("footer-placeholder").innerHTML = data;
+
+      // Wait a moment to apply styles to loaded footer
+      setTimeout(() => {
+        const script = document.createElement("script");
+        script.src = "js/bootstrap.min.js";
+        document.body.appendChild(script);
+      }, 100);
     });
 </script>
+
+
 
 
 
