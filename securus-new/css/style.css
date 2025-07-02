@@ -1825,94 +1825,6 @@
      margin-top: 42px;
  }
  
- /*** 
- 
- ====================================================================
-         Main Sevice One Section
- ====================================================================
- 
- ***/
- .main-service-one-section {
-     position: relative;
-     display: block;
-     padding: 0 0 70px;
-     margin-top: -145px;
-     z-index: 2;
- }
- .main-service-one-sec-single{
-     position: relative;
-     display: block;
-     margin-bottom: 30px;
- }
- .main-service-one-sec-img{
-     position: relative;
-     display: block;
-     overflow: hidden;
- }
- .main-service-one-sec-img img {
-     width: 100%;
-     border-top-right-radius: 5px;
-     border-top-left-radius: 5px;
-     transition: .5s;
- }
- .main-service-one-sec-single:hover .main-service-one-sec-img img {
-     transform: scale(1.1);
- }
- .main-service-one-sec-content{
-     position: relative;
-     display: block;
-     padding: 38px 40px 40px;
-     background-color: rgb( 255, 255, 255 );
-     box-shadow: 0px 50px 90px 0px rgb( 26, 46, 85, .10);
- }
- .main-service-one-count {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(0 0 0 / 29%);
-    color: transparent;
-    z-index: 99;
-    font-family: var(--heading-font);
-    font-size: 36px;
-    font-weight: 800;
-}
- .main-service-one-sec-content h4 {
-    display: inline-block;
-    font-size: 16px;
-    background-color: var(--thm-primary);
-    font-weight: 400;
-    line-height: 26px;
-    color: #fff;
-    padding: 3px 20px;
-    margin-bottom: 7px;
- }
- .main-service-one-sec-content h3 {
-     font-size: 20px;
-     font-weight: 800;
-     line-height: 32px;
-     margin-top: 10px;
-     margin-bottom: 8px;
- }
- .main-service-one-sec-content p{
-     margin: 0;
- }
- .main-service-one-btn {
-     margin-top: 30px;
- }
- .main-service-one-btn .theme-btn {
-     padding: 10px 30px;
-     background-color: #222;
- }
- .main-service-one-btn .theme-btn:hover {
-     background-color: var(--thm-primary);
- }
- .main-service-one-icon {
-    font-size: 70px;
-    margin-bottom: 25px;
-    color: var(--thm-primary);
-    line-height: 70px;
-}
  
  /*** 
  
@@ -2916,9 +2828,14 @@
  .team-one-section.two{
      background: #f7f8f9;
      background-repeat: repeat;
+     border-radius: 12px;
  }
  .team-one-section.two .thm-section-title h2{
  }
+ .team-one-img img {
+    border-radius: 12px; /* You can adjust value */
+}
+
  /*** 
  ====================================================================
          Team Two Section
@@ -2932,6 +2849,7 @@
  .why-choose-two-image{
      position: relative;
      display: block;
+
  }
  .why-choose-two-image img{
      width: 100%;
@@ -2962,6 +2880,7 @@
      position: absolute;
      top: 0;
      left: 0;
+
  }
  .most-trusted-skill-icon span{
  
@@ -3060,138 +2979,6 @@
      padding-bottom: 8px;
  }
  
- 
- /*** 
- ====================================================================
-         Latest Projects One Section
- ====================================================================
- ***/
- .latest-projects-one-section{
-     position: relative;
-     display: block;
-     padding: 100px 0 100px;
-     background: #f7f8f9;
- }
- .latest-projects-one-section:before{
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     height: 382px;
-     content: "";
-     background: #ffffff;
- }
- .latest-projects-one-section .container {
-    max-width: 1450px;
- }
- .latest-projects-one-bg {
-     position: absolute;
-     bottom: 115px;
-     left: 100px;
-     height: 383px;
-     width: 599px;
-     background-repeat: no-repeat;
-     background-position: left center;
- }
- .latest-pro-one-title{}
- .latest-pro-one-title h2 {
-     font-size: 40px;
-     font-weight: 800;
-     line-height: 50px;
-     margin-bottom: 28px;
- }
- .latest-pro-one-title p {
-     margin: 0;
-     line-height: 24px;
- }
- .latest-pro-one-single{}
- .latest-pro-one-img-box{
-     position: relative;
-     display: block;
-     overflow: hidden;
- }
- .latest-pro-one-img-box:before{
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
-     height: 100%;
-     content: "";
-     background: rgba(2, 15, 32, 0)
- }
- .latest-pro-one-img-box img{
-     width: 100%;
-     transition: .5s;
- }
-  .latest-pro-one-img-box:hover img {
-     transform: scale(1.08);
-  }
- .latest-pro-one-img-title {
-     position: absolute;
-     bottom: 30px;
-     left: 50%;
-     height: 80px;
-     width: 310px;
-     background: var(--thm-primary);
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     transform: translateX(-50%);
-     padding: 0 25px;
- }
- .latest-pro-one-img-title .content{}
- .latest-pro-one-img-title .content h5{
-     font-size: 22px;
-     font-weight: 800;
-     line-height: 32px;
- }
- .latest-pro-one-img-title .content h5 a{
-     color: #fff;
- }
- .latest-pro-one-img-title .icon{}
- .latest-pro-one-img-title .icon a{}
- .latest-pro-one-img-title .icon a span {
-     font-size: 35px;
-     color: #fff;
-     line-height: 45px;
- }
- 
- 
- .testimonials-one-section.two {
-     background-color: #0e0e0d;
-     background-size: cover;
- }
- .testimonials-one-section.two .thm-section-title h2{
-     color: #ffffff;
- }
- .testimonials-one-section.two .testimonials-one-single{
-     background-color: rgb(24 31 41);
- }
- .testimonials-one-section.two .testimonials-one-single .client-info .client-content h3{
-     color: #ffffff;
- }
- .testimonials-one-section.two .testimonials-one-single .text-box p{
-     color: rgb(255 255 255 / 80%);
- }
- .testimonials-one-section.two .testimonials-one-single .testimonials-quote i{
-     color: #242b36;
- }
- .testimonials-one-section.two .testimonials-one-carousel.owl-carousel .owl-dots .owl-dot{
-     position: relative;
-     display: inline-block;
-     width: 10px;
-     height: 10px;
-     background: #ffffff;
-     border: 1px solid var(--thm-primary);
-     margin: 0px 5px;
-     padding: 0px;
-     border-radius: 50%;
-     transition: all 100ms linear;
-     transition-delay: 0.1s;
- }
- .testimonials-one-section.two .testimonials-one-carousel.owl-carousel .owl-dot.active{
-     background: var(--thm-primary);
- }
  
  
  
@@ -3307,60 +3094,6 @@
  }
  .about-tow-section.about-page .signature img{}
  
- /*--------------------------------------------------------------
- #  video Two Section
- --------------------------------------------------------------*/
- .video-two-section {
-     position: relative;
-     display: block;
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     padding: 190px 0 192px;
- }
- .video-two-sec-inner {
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
- .video-two-sec-icon{}
- .video-two-sec-btn {
-     height: 90px;
-     width: 90px;
-     color: #ffffff;
-     border: 4px solid #ffffff;
-     border-radius: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     font-size: 30px;
-     -webkit-transition: all 500ms ease;
-     transition: all 500ms ease;
- }
- .video-two-sec-btn:hover{
-     border: 4px solid var(--thm-primary);
-     color: var(--thm-primary);
- }
- .video-two-sec-content{
-     margin-left: 40px;
- }
- .video-two-sec-content h2 {
-     font-size: 40px;
-     color: #ffffff;
-     font-weight: 800;
-     line-height: 50px;
-     margin-bottom: 30px;
- }
- .video-two-sec-content span{
-     color: var(--thm-primary);
- }
- .video-two-sec-content p{
-     font-size: 20px;
-     color: #ffffff;
-     margin: 0;
-     line-height: 30px;
- }
  
  /*--------------------------------------------------------------
  #  History One Section
