@@ -11,6 +11,17 @@
     <title>Securus || Be Safe and Secured</title>
     <!-- Stylesheets -->
 
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- search botton-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -351,15 +362,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <!--
-                        <div class="about-two-bottom-content">
-                            <h3>John Franclin - <span>CEO & Founder</span></h3>
-                            <div class="signature">
-                                <img src="images/about/signature-1.png" alt="">
-                            </div>
-                        </div>
--->
                             </div>
                         </div>
                     </div>
@@ -490,9 +492,6 @@
                                 </div>
                             </div>
                         </div>
-
-               
-
                     </div>
                 </div>
             </section>
@@ -531,7 +530,7 @@
             </section>
 
 
-       <!-- Start Awards & Accreditations Section -->
+       <!-- Start Awards & Accreditations Section
 <section class="awards-section py-5">
   <div class="container">
     <div class="text-center mb-4">
@@ -567,8 +566,9 @@
         </div>
       </div>
 
-      <!-- Carousel controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#awardsCarousel" data-bs-slide="prev">
+      < Carousel controls -->
+
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#awardsCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
@@ -578,14 +578,31 @@
       </button>
     </div>
   </div>
-</section>
+</section> --> 
 <!-- End Awards & Accreditations Section -->
 
+<section class="awards-section">
+  <h2>Awards & Accolades</h2>
+
+  <div class="swiper awards-swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides: replace these images with your certificates -->
+      <div class="swiper-slide"><img src="images/awards/award-img1.jpg" alt="Certificate 1"></div>
+      <div class="swiper-slide"><img src=" images/awards/award-img2.jpg" alt="Certificate 2"></div>
+      <div class="swiper-slide"><img src="images/awards/award-img3.jpg" alt="Certificate 3"></div>
+      <div class="swiper-slide"><img src="images/awards/award-img4.jpg" alt="Certificate 4"></div>
+      <div class="swiper-slide"><img src="images/awards/award-img5.jpg" alt="Certificate 5"></div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
            
-        </div><!-- /.page-wrapper -->
 
-
-
+</div>
 
 
 
@@ -628,6 +645,27 @@
                     }, 100);
                 });
         </script>
+
+
+
+<script>
+  const swiper = new Swiper('.awards-swiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 4,
+    spaceBetween: 5,
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
+</script>
+
+
 
 </body>
 
