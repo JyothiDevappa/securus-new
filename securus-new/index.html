@@ -166,10 +166,103 @@
                 background-color: #fff;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
                 text-align: center;
-            }
-
-            
+            }       
         }
+
+        .career-opportunities-section {
+  padding: 60px 0;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.career-image {
+  height: 450px; /* adjust as needed */
+  width: 100%;
+  object-fit: cover; /* keeps aspect ratio without distortion */
+}
+
+
+.career-left {
+  position: relative;
+  text-align: center;
+}
+
+.career-text-overlay {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.career-text-overlay h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.career-text-overlay .highlight {
+  color: #00bcd4;
+}
+
+.career-box {
+  background-color: #0a2540;
+  padding: 30px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.career-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.career-list li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 0;
+}
+
+.career-list h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.career-list p {
+  margin: 4px 0 0;
+  font-size: 15px;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .career-text-overlay h2 {
+    font-size: 20px;
+  }
+  .career-box {
+    margin-top: 30px;
+  }
+}
+/* Tablet View */
+@media (max-width: 992px) {
+  .career-image {
+    max-height: 300px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+  .career-image {
+    max-height: 200px;
+  }
+}
+
     </style>
 
 </head>
@@ -439,6 +532,69 @@
                 </div>
             </section>
             <!--End Funfacts One Section --> 
+
+
+
+
+
+
+
+
+
+
+
+  <!-- End Features Two Section --> <!-- Start About Two Section -->
+
+  <section class="careers-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left: Team Image -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="career-image-wrapper">
+<img src="images/imagess/services3.jpg" alt="Security Team" class="img-fluid rounded shadow-sm career-image">
+        </div>
+      </div>
+
+      <!-- Right: Career Info -->
+      <div class="col-md-6">
+        <div class="career-content p-4 rounded shadow">
+          <h3 class="career-heading mb-4">Career Opportunities</h3>
+          <ul class="career-list">
+            <li>
+              <div class="job-title">Chief Security Officer (CSO)</div>
+              <div class="job-salary">Salary: up to $3,800/-</div>
+            </li>
+            <li>
+              <div class="job-title">Senior Security Supervisor (SSS)</div>
+              <div class="job-salary">Salary: up to $3,500/-</div>
+            </li>
+            <li>
+              <div class="job-title">Security Supervisor (SS)</div>
+              <div class="job-salary">Salary: up to $3,200/-</div>
+            </li>
+            <li>
+              <div class="job-title">Senior Security Officer (SSO)</div>
+              <div class="job-salary">Salary: up to $2,700/-</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
