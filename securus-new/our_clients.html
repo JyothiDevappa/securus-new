@@ -52,24 +52,31 @@
 
     .partners-section {
       background-color: #f9f9f9;
-      padding: 20px;
+      /* padding: 20px; */
+        padding: 60px 60px; /* 👈 More space on left/right */
+
     }
 
     .partners-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* 👈 Wider columns */
       gap: 70px;
       justify-items: center;
       align-items: center;
     }
 
-    .partners-grid img {
-      max-width: 170px;
+    /* .partners-grid img {
+      max-width: 150px;
       height: auto;
       object-fit: contain;
       transition: transform 0.3s ease;
-    }
-
+    } */
+.partners-grid img {
+  width: 130px;     /* 👈 Fixed same width for all */
+  height: 80px;     /* 👈 Fixed same height for all */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
     .partners-grid img:hover {
       transform: scale(1.1);
     }
@@ -101,9 +108,9 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Physical Guarding</a></li>
+                <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
                 <li><a class="dropdown-item" href="#">Remote Monitoring</a></li>
-                <li><a class="dropdown-item" href="#">Event Security</a></li>
+                <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
                 <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
               </ul>
             </li>
@@ -131,9 +138,9 @@
           <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" data-bs-toggle="dropdown"
             aria-expanded="false">Our Services</a>
           <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-            <li><a class="dropdown-item" href="#">Physical Guarding</a></li>
+            <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
             <li><a class="dropdown-item" href="#">Remote Monitoring</a></li>
-            <li><a class="dropdown-item" href="#">Event Security</a></li>
+            <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
             <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
           </ul>
         </li>
@@ -146,6 +153,7 @@
     </div>
   </div>
   <!-- End Main Header -->
+
   <!-- Main Content -->
   <main class="main-content" style="padding-top: 120px;">
     <h2 class="title-1">Our Partners</h2>
