@@ -3,70 +3,77 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Security Training Courses</title>
-
-    <!-- Stylesheets -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physical Guarding | SECURUS</title>
 
     <!--Header-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            /* background-color: navy; */
-            color: aliceblue;
-
-        }
-
-        .hero {
-            background-image: url('../securus-new/images/securus.jpeg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+        header {
+            background: #00316d;
             color: white;
-            position: relative;
-            padding: 0 20px;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-        }
-
-        .content {
-            max-width: 1300px;
-            margin: 50px auto;
+            text-align: center;
             padding: 20px;
-            line-height: 1.6;
-            color: #4e4e4e;
-            font-size: 22px;
-            /* background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2); */
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-height: 90vh;
+            object-fit: cover;
+            display: block;
+        }
+
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .about-container img {
+            flex: 1;
+            max-width: 400px;
+            /* decreased width */
+            width: 100%;
+        }
+
+        .about-text {
+            width: 1500px;
+            max-width: 100%;
+            text-align: justify;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 0 auto;
+        }
+
+
+        @media(max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+            }
+            .about-text {
+            text-align: justify;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 0 auto;
+        }
         }
     </style>
 </head>
@@ -77,19 +84,15 @@
     <header class="main-header">
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
             <div class="container-fluid px-3">
-
-                <!-- Logo -->
                 <a class="navbar-brand" href="index.html">
                     <img src="images/logo.png" alt="Logo" style="height: 70px;">
                 </a>
 
-                <!-- Hamburger Button -->
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#mobileMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Desktop Nav -->
                 <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
                     <ul class="navbar-nav gap-4">
                         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
@@ -104,7 +107,7 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="Awards.html">Awards & Accreditations</a></li>
                         <li class="nav-item"><a class="nav-link" href="our_clients.html">Our Clients</a></li>
-                        <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="career.html"> Careers</a></li>
                         <li class="nav-item"><a class="nav-link" href="training.html">Security Training Courses</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
@@ -140,20 +143,36 @@
             </ul>
         </div>
     </div>
-    <section class="hero">
 
-    </section>
+    <main>
+        <div class="hero-image">
+            <img src="../securus-new/images/securus.jpeg" alt="About Us Image">
+        </div>
 
-    <section class="content">
-        <p>Physical guarding is a component of physical security that involves using security personnel to protect
-            people, property, and assets from harm or loss. It encompasses a range of activities, including access
-            control, surveillance, and response to incidents. Effective physical guarding requires a combination of
-            human expertise and technology to deter, detect, and respond to threats.</p>
+        <section class="about-container">
+            <div class="about-text">
+                <p>Physical guarding is a component of physical security that involves using security personnel to
+                    protect
+                    people, property, and assets from harm or loss. It encompasses a range of activities, including
+                    access
+                    control, surveillance, and response to incidents. Effective physical guarding requires a combination
+                    of
+                    human expertise and technology to deter, detect, and respond to threats.</p>
 
-        <p><strong>SECURUS</strong> offers professional and cost-effective Physical security services. We supply and
-            manage security personnel on a 24-hour basis for large MNCs, Embassies, Financial establishments,
-            Educational Institutions, Museums, Hotels, Commercial and Industrial buildings, as well as projects.</p>
-    </section>
+                <p><strong>SECURUS</strong> offers professional and cost-effective Physical security services. We supply
+                    and
+                    manage security personnel on a 24-hour basis for large MNCs, Embassies, Financial establishments,
+                    Educational Institutions, Museums, Hotels, Commercial and Industrial buildings, as well as projects.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('selectstart', e => e.preventDefault());
+    </script>
 
     <div id="footer-placeholder"></div>
 
@@ -162,8 +181,6 @@
             .then(res => res.text())
             .then(data => {
                 document.getElementById("footer-placeholder").innerHTML = data;
-
-                // Wait a moment to apply styles to loaded footer
                 setTimeout(() => {
                     const script = document.createElement("script");
                     script.src = "js/bootstrap.min.js";
