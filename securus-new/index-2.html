@@ -735,22 +735,6 @@
 
 
 
-        <div id="footer-placeholder"></div>
-
-        <script>
-            fetch("footer.html")
-                .then(res => res.text())
-                .then(data => {
-                    document.getElementById("footer-placeholder").innerHTML = data;
-
-                    // Wait a moment to apply styles to loaded footer
-                    setTimeout(() => {
-                        const script = document.createElement("script");
-                        script.src = "js/bootstrap.min.js";
-                        document.body.appendChild(script);
-                    }, 100);
-                });
-        </script>
 
 
 
@@ -772,10 +756,14 @@
 </script>
 
 
+<!--footer-->
+<div id="footer-placeholder"></div>
+
+<!-- footer script -->
+<script src="js/footer.js"></script>
 
 </body>
 
 
-<!-- Mirrored from thememxpro.com/php-template/hactora/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 17:25:09 GMT -->
 
 </html>
