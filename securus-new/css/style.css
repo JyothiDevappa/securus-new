@@ -1173,168 +1173,7 @@
  }
 
  
- /*** 
  
- ====================================================================
-         Footer Section
- ==================================================================== 
-
- ***/
- 
- /* .footer-section {
-    position: relative;
-    display: block;
-    background: #f2f2f2; 
-    padding: 94px 0 0px;
-}
-
-.footer-widget-title {
-    margin-bottom: 25px;
-}
-.footer-widget-title h3 {
-    font-size: 22px;
-    color: #333; 
-    font-weight: 600;
-    line-height: 32px;
-} */
-/* 
-.footer-widget-about {
-    margin-right: 20px;
-}
-.footer-widget-about-text {
-    margin-top: -4px;
-}
-.footer-widget-about-text p {
-    font-size: 16px;
-    color: #333; 
-    line-height: 33px;
-    margin: 0;
-} */
-/* .footer-widget-about-social {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    padding-top: 25px;
-}
-.footer-widget-about-social a {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #26262c;
-    color: #ffffff;
-    font-size: 15px;
-    -webkit-transition: all 500ms ease;
-    transition: all 500ms ease;
-}
-.footer-widget-about-social a:hover {
-    background: var(--thm-primary);
-}
-.footer-widget-about-social a+a {
-    margin-left: 10px;
-}
-
-.footer-widget-useful-links {}
-.footer-widget-useful-links-list {}
-.footer-widget-useful-links-list li+li {
-    margin-top: 7px;
-}
-.footer-widget-useful-links-list li a {
-    font-size: 16px;
-    color: #333;  */
-/* }
-.footer-widget-useful-links-list li a:hover {
-    color: var(--thm-primary);
-} */
-/* 
-.footer-widget-contact {}
-.footer-widget_contact-info {}
-.footer-widget_contact-info p {
-    color: #333;  */
-    /* font-size: 16px;
-    margin: 0;
-    line-height: 26px;
-    margin-bottom: 4px;
-}
-.footer-widget_contact-info a {
-    color: #333; 
-    font-size: 16px;
-} */
-/* 
-.footer-widget-gallery {
-    margin-left: 86px;
-}
-.footer-widget-gallery-list {
-    padding-top: 6px;
-}
-.footer-widget-gallery-list li {
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-right: 5px;
-}
-.footer-widget-gallery-list li .gallery-img {
-    position: relative;
-    display: block;
-}
-.footer-widget-gallery-list li .gallery-img:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    content: "";
-    background: rgba(0,0,0,.3);
-    transform: scaleX(0);
-    -webkit-transition: all 500ms ease;
-    transition: all 500ms ease;
-}
-.footer-widget-gallery-list li:hover .gallery-img:before {
-    transform: scaleX(1);
-} 
-.footer-widget-gallery-list li .gallery-img img {
-    border-radius: 5px;
-    width: 100%;
-}
-.footer-widget-gallery-list li:hover .gallery-img-hover {
-    transform: scale(1);
-} 
-.footer-bottom {
-    padding-top: 84px;
-    padding-bottom: 40px;
-}
-.footer-bottom p {
-    font-size: 18px;
-    color: #333; 
-    line-height: 30px;
-    margin: 0;
-    text-align: center;
-}
-footer a {
-  text-decoration: none;
-  color: #000; 
-}
-
-footer a:hover {
-  text-decoration: underline; 
-  color: #007bff; 
-} */
-
-
-/* 
-@media (max-width: 767.98px) {
-  .footer-widget-single {
-    display: block !important;
-    margin-bottom: 30px;
-  }
-} */
-
  /*** 
  ====================================================================
          About Two Section
@@ -2213,46 +2052,7 @@ footer a:hover {
  }
  .faq-one-right{}
  
- /*--------------------------------------------------------------
- #  Error Section
- --------------------------------------------------------------*/
- .error-section{
-     position: relative;
-     display: block;
-     padding: 150px 0 150px;
- }
- .error-section-content{
-     position: relative;
-     display: block;
-     text-align: center;
- }
-
- .error-section-content h1 {
-     position: relative;
-     font-size: 160px;
-     line-height: 160px;
-     font-weight: 700;
-     margin-bottom: 40px;
-     margin-top: 40px;
- }
-
- .error-title h3{
-     font-size: 50px;
-     font-weight: 700;
-     line-height: 60px;
- }
- .error-image {
-     padding-top: 32px;
-     padding-bottom: 48px;
- }
- .error-image img{
-     width: auto;
- }
- .error-btn{}
- .error-btn .theme-btn {
-     padding: 15px 50px;
-     border-radius: 30px;
- }
+ 
  
  /*--------------------------------------------------------------
  #  Contact One Section
@@ -2883,7 +2683,7 @@ body {
   display: flex;
   background: #f7f7f7;
   padding: 40px;
-  font-family: Arial, sans-serif;
+
   border-top: 4px solid #002060;
 }
 
@@ -2894,19 +2694,6 @@ body {
   border-right: 1px solid #ccc;
   padding-right: 20px;
 }
-
-/* .logo {
-  width: 190px;
-  height: auto;
-  margin-bottom: 15px;
-} */
-
-/* .logo {
-  width: 230px;
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 15px;
-} */
 
 .logo {
   width: 100%;

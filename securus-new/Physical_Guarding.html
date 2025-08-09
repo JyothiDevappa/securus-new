@@ -38,42 +38,57 @@
             display: block;
         }
 
+        /* New about section layout */
         .about-container {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            align-items: center;
-            justify-content: center;
+            gap: 40px;
             padding: 40px 20px;
+            align-items: stretch;
+            /* same height */
+            max-width: 1600px;
+            margin: 60px auto 0 auto;
+            /* add margin-top to push down, keep horizontal centering */
+            justify-content: space-between;
+            /* push children left and right */
         }
 
         .about-container img {
-            flex: 1;
-            max-width: 400px;
-            /* decreased width */
+            flex: 1 1 45%;
+            object-fit: cover;
             width: 100%;
+            max-height: 400px;
+            border-radius: 8px;
         }
 
         .about-text {
-            width: 1500px;
-            max-width: 100%;
-            text-align: justify;
+            flex: 1 1 45%;
             font-size: 1.2rem;
             line-height: 1.8;
-            margin: 0 auto;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
         }
 
-
-        @media(max-width: 768px) {
+        @media (max-width: 768px) {
             .about-container {
                 flex-direction: column;
+                padding: 20px 15px;
             }
+
+            .about-container img {
+                max-height: none;
+                height: auto;
+                flex: none;
+                margin-bottom: 20px;
+                border-radius: 8px;
+            }
+
             .about-text {
-            text-align: justify;
-            font-size: 15px;
-            line-height: 1.8;
-            margin: 0 auto;
-        }
+                font-size: 1rem;
+                line-height: 1.6;
+                flex: none;
+            }
         }
     </style>
 </head>
@@ -145,11 +160,10 @@
     </div>
 
     <main>
-        <div class="hero-image">
-            <img src="../securus-new/images/securus.jpeg" alt="About Us Image">
-        </div>
+
 
         <section class="about-container">
+            <img src="../securus-new/images/securus.jpeg" alt="Physical Guarding Image" />
             <div class="about-text">
                 <p>Physical guarding is a component of physical security that involves using security personnel to
                     protect
@@ -174,13 +188,11 @@
         document.addEventListener('selectstart', e => e.preventDefault());
     </script>
 
+    <!--footer-->
+    <div id="footer-placeholder"></div>
 
-<!--footer-->
-<div id="footer-placeholder"></div>
-
-<!-- footer script -->
-<script src="js/footer.js"></script>
-
+    <!-- footer script -->
+    <script src="js/footer.js"></script>
 
 </body>
 

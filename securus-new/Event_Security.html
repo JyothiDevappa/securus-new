@@ -38,23 +38,42 @@
       display: block;
     }
 
-    .about-container {
+    .content-container {
       display: flex;
-      justify-content: center;
-      padding: 40px 20px;
+      gap: 40px;
+      width: 100%;
+      margin: 60px 0;
+      padding: 0 20px;
+      box-sizing: border-box;
+      align-items: stretch; /* Make children stretch same height */
     }
 
-    .about-text {
-      max-width: 700px;
+    .left-image {
+      flex: 1;
+      max-width: none;
+      display: flex; /* So img can fill height */
+    }
+
+    .left-image img {
       width: 100%;
+      height: 100%; /* Fill container height */
+      object-fit: cover; /* Cover nicely without distortion */
+      display: block;
+    }
+
+    .content {
+      flex: 1;
+      max-width: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Vertically center text */
       text-align: justify;
       font-size: 1.2rem;
       line-height: 1.8;
-      margin: 60px auto 40px;
     }
 
     .content h2 {
-      text-align: center;
+      text-align: left;
       margin-bottom: 30px;
       font-size: 2.5rem;
       font-weight: 600;
@@ -63,48 +82,43 @@
     }
 
     .content ul {
-      padding-left: 20px;
+      padding-left: 0px;
+      margin-top: 0;
     }
 
-    .content {
-  max-width: 700px;
-  width: 100%;
-  text-align: justify;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin: 60px auto 40px;
-  padding: 0 20px;  /* ⬅️ Adds left/right space even on small screens */
-  box-sizing: border-box; /* Always keep padding inside width */
-}
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .content-container {
+        flex-direction: column;
+        margin: 40px auto;
+      }
 
-/* Tablets */
-@media (max-width: 768px) {
-  .content {
-    font-size: 1.05rem;
-    margin-top: 40px;
-    padding: 0 20px;
-  }
+      .left-image,
+      .content {
+        max-width: 100%;
+        flex: none;
+      }
 
-  .content h2 {
-    font-size: 1.6rem;
-  }
-}
+      .content {
+        font-size: 1.05rem;
+        margin-top: 20px;
+      }
 
-/* Mobiles */
-@media (max-width: 480px) {
-  .content {
-    font-size: 0.95rem;
-    margin-top: 30px;
-    padding: 0 20px; /* Safe side spacing on very small screens */
-  }
+      .content h2 {
+        font-size: 1.6rem;
+      }
+    }
 
-  .content h2 {
-    font-size: 1.4rem;
-                line-height: 1.8;
+    @media (max-width: 480px) {
+      .content {
+        font-size: 0.95rem;
+      }
 
-  }
-}
-
+      .content h2 {
+        font-size: 1.4rem;
+        line-height: 1.8;
+      }
+    }
   </style>
 </head>
 
@@ -174,26 +188,31 @@
   </div>
 
   <main>
-    <div class="hero-image">
-      <img src="../securus-new/images/securus.jpeg" alt="Event Security Image">
-    </div>
 
-    <section class="content">
-      <h2>Our Specialized Event Security Services</h2>
-      <p>
-        <strong>Event security specialists</strong> are among the most reputed and well-trained in the industry, and
-        they are known for their professionalism and dedication.
-      </p>
+    <section class="content-container">
+      <!-- Left side image -->
+      <div class="left-image">
+        <img src="../securus-new/images/securus.jpeg" alt="Event Security" />
+      </div>
 
-      <p>Below is a list of the services we offer:</p>
+      <!-- Right side text -->
+      <section class="content">
+        <h2>Our Specialized Event Security Services</h2>
+        <p>
+          <strong>Event security specialists</strong> are among the most reputed and well-trained in the industry,
+          and they are known for their professionalism and dedication.
+        </p>
 
-      <ul>
-        <li>Exhibition Guarding</li>
-        <li>Crowd Control Management</li>
-        <li>Traffic and Car Park Management</li>
-        <li>Access Control</li>
-        <li>Executive Protection</li>
-      </ul>
+        <p>Below is a list of the services we offer:</p>
+
+        <ul>
+          <li>Exhibition Guarding</li>
+          <li>Crowd Control Management</li>
+          <li>Traffic and Car Park Management</li>
+          <li>Access Control</li>
+          <li>Executive Protection</li>
+        </ul>
+      </section>
     </section>
   </main>
 
@@ -202,11 +221,11 @@
     document.addEventListener('selectstart', e => e.preventDefault());
   </script>
 
-<!--footer-->
-<div id="footer-placeholder"></div>
+  <!--footer-->
+  <div id="footer-placeholder"></div>
 
-<!-- footer script -->
-<script src="js/footer.js"></script>
+  <!-- footer script -->
+  <script src="js/footer.js"></script>
 
 </body>
 
