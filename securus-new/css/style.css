@@ -195,52 +195,6 @@
  
  
  
- .icon-search-box>button {
-     background: none;
- }
- .icon-search-box form {
-     height: 50px;
-     width: 280px;
-     padding: 5px;
-     border-radius: 4px;
-     margin: 36px 0 0;
-     left: auto;
-     right: 0;
-     border: none;
-     position: absolute;
-     right: 0 !important;
-     left: inherit !important;
-     transform: translate3d(-50px, 64px, 0)!important;
- }
- .icon-search-box form input {
-   font-family: 'Raleway', sans-serif;
-   font-weight: normal;
-   width:100%;
-   height:100%;
-   background: transparent;
-   color:#9e9e9e;
-   border:1px solid #f7f7f7;
-   padding: 0 47px 0 10px;
-   font-size: 15px;
- }
- .icon-search-box form button {
-     display: block;
-     width: 40px;
-     line-height: 40px;
-     text-align: center;
-     position: absolute;
-     top: 5px;
-     right: 5px;
-     color: #fff;
-     background: #000;
- }
- 
- 
- .icon-search-box .dropdown-toggle::after {
-     display: none;
- }
- 
- 
  
 
  
@@ -2678,12 +2632,10 @@ body {
 
 
 
-
 .footer {
   display: flex;
   background: #f7f7f7;
   padding: 40px;
-
   border-top: 4px solid #002060;
 }
 
@@ -2719,10 +2671,14 @@ body {
   display: flex;
   justify-content: space-between;
   padding-left: 30px;
+  align-items: stretch; /* Make all sections same height */
 }
 
 .footer-section {
   width: 30%;
+  display: flex;
+  flex-direction: column; /* Stack content */
+  justify-content: space-between; /* Push phone/email to bottom */
 }
 
 .footer-section h3 {
@@ -2739,6 +2695,7 @@ body {
   margin-bottom: 15px;
   font-size: 14px;
   color: #333;
+  flex-grow: 1; /* Fill available height so cards align */
 }
 
 /* Card Box for phone and email */
@@ -2767,6 +2724,8 @@ body {
 .bold-text {
   font-weight: bold;
 }
+
+/* Responsive */
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
