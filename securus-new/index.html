@@ -694,6 +694,28 @@
 <script src="js/footer.js"></script>
 
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".awards-swiper", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      slidesPerView: 4, // now showing 4 images
+      spaceBetween: 10, // reduced gap
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        480: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 4 },
+      },
+    });
+  });
+</script>
+
 
 </body>
 

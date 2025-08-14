@@ -2633,10 +2633,17 @@ body {
 
 
 .footer {
+  font-family: var(--body-font);
   display: flex;
   background: #f7f7f7;
   padding: 40px;
   border-top: 4px solid #002060;
+  font-weight: normal !important;
+}
+
+.footer,
+.footer * {
+  font-weight: normal !important;
 }
 
 /* Left: Logo + Company Name */
