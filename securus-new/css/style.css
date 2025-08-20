@@ -468,7 +468,7 @@
  ====================================================================
  
  ***/
- .about-us-one-section {
+ /* .about-us-one-section {
      position: relative;
      display: block;
      background: #f7f8f9;
@@ -543,8 +543,8 @@
  }
  .about-us-right .description p{
      margin: 0;
- }
- .ceo-founder-details {
+ } */
+ /* .ceo-founder-details {
      display: flex;
      align-items: center;
      margin-top: 20px;
@@ -570,7 +570,7 @@
  }
  .ceo-founder-details .ceo-founder-content span{
      color: var(--thm-primary);
- }
+ } */
  
  /*** 
  
@@ -776,7 +776,7 @@
  ====================================================================
  
  ***/
- .testimonials-one-section{
+ /* .testimonials-one-section{
      position: relative;
      display: block;
      background: #f4f4f4;
@@ -854,7 +854,7 @@
  
  .testimonials-one-carousel.owl-carousel .owl-dots .owl-dot span{
      display: none;
- }
+ } */
  
  /*** 
  
@@ -863,7 +863,7 @@
  ====================================================================
  
  ***/
- .factory-solutions-one-section {
+ /* .factory-solutions-one-section {
      position: relative;
      display: block;
      padding: 120px 0 420px;
@@ -899,7 +899,7 @@
  }
  .factory-solutions-one-inner span{
      color: var(--thm-primary);
- }
+ } */
  
  /*** 
  
@@ -1576,7 +1576,7 @@
  /*--------------------------------------------------------------
  #  Serviec Details Section
  --------------------------------------------------------------*/
- .service-details-section{
+ /* .service-details-section{
      position: relative;
      display: block;
      padding: 100px 0 100px;
@@ -1880,7 +1880,7 @@
    font-weight: 900;
    margin: 0px;
    content: "\f068";
- }
+ } */
  
  
  /*--------------------------------------------------------------
@@ -2010,91 +2010,10 @@
  
  /*--------------------------------------------------------------
  #  Contact One Section
- --------------------------------------------------------------*/
- .contact-one-section{
-     position: relative;
-     display: block;
-     padding: 100px 0 100px;
- }
- /* .contact-one-image{
-     position: relative;
-     display: block;
- } */
-/*--------------------------------------------------------------
+------------------------------------------------------------
 # Page Header Section
 --------------------------------------------------------------*/
-.page-header {
-  position: relative;
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  padding: 150px 0 80px; /* Adjust vertical spacing */
-  text-align: left;
-  color: #fff;
-}
-
-.page-header h2 {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.thm-breadcrumb {
-  display: inline-flex;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  color: #ffffff;
-}
-
-.thm-breadcrumb a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.thm-breadcrumb span {
-  color: #fff;
-}
-
- 
- .contact-one-image img{
-     width: 100%;
- }
- .contact-one-form{}
- .contact-one-form .input-box{}
- .contact-one-form .input-box input[type="text"], 
- .contact-one-form .input-box input[type="Email"]{
-     font-size: 16px;
-     background-color: rgb( 247, 248, 249 );
-     height: 60px;
-     color: #888888;
-     padding: 0 25px;
-     font-weight: 400;
-     margin-bottom: 30px;
-     width: 100%;
- }
- 
- .contact-one-form .input-box textarea{
-     font-size: 16px;
-     background-color: rgb( 247, 248, 249 );
-     height: 150px;
-     color: #888888;
-     font-weight: 400;
-     margin-bottom: 20px;
-     width: 100%;
-     padding: 20px 25px 25px;
- }
- .contact__btn{}
- .contact__btn .theme-btn {
-     border-radius: 0;
-     padding: 15px 30px;
- }
- .contact__btn {
-  margin-top: -40px; /* Adjust the value as needed */
-}
+/*  */
 
  /*--------------------------------------------------------------
  # Google_map
@@ -2115,7 +2034,7 @@
  /*--------------------------------------------------------------
  # Contactinfo
  --------------------------------------------------------------*/
- .contactinfo{
+ /* .contactinfo{
      position: relative;
      display: block;
      padding: 0 0 70px;
@@ -2154,10 +2073,10 @@
      margin: 0;
      font-size: 15px;
  }
- 
+  */
 
  /* author */
- 
+/*  
  .author-one {
      padding: 25px 35px 25px;
      display: -webkit-box;
@@ -2187,11 +2106,11 @@
      line-height: 24px;
  }
  
- 
+  */
  /*--------------------------------------------------------------
  ## Comments
  --------------------------------------------------------------*/
- 
+/*  
  .comment-one-title,
  .comment-form-title {
      margin: 0;
@@ -2291,7 +2210,7 @@
  .comment-form-btn:hover{
      background: var(--thm-black);
  }
- 
+  */
  
  
  /* new css  */
@@ -2641,9 +2560,11 @@ body {
   font-weight: normal !important;
 }
 
-.footer,
+.footer, 
 .footer * {
+  font-family: var(--body-font) !important;
   font-weight: normal !important;
+  color: inherit !important; /* Optional: if color is also overridden */
 }
 
 /* Left: Logo + Company Name */

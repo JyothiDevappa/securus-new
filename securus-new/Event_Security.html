@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,8 +19,10 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet">
 
   <style>
     header {
@@ -30,20 +33,39 @@
     }
 
     .content-container {
+      max-width: 1400px;
+      margin: 40px auto;
       display: flex;
       gap: 40px;
       width: 100%;
-      margin: 40px 0;
       padding: 0 20px;
       box-sizing: border-box;
       align-items: center;
     }
 
+    .left-image {
+      flex: 0.8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      order: 1;
+      /* Image on left */
+    }
+
+    .left-image img {
+      width: 90%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+    }
+
     .content {
-      flex: 1.3;
-      text-align: justify;
-      font-size: 1.2rem;
+      order: 2;
+      flex: 1.5;
+      font-size: 1.1rem;
       line-height: 1.8;
+      text-align: justify;
     }
 
     h1.page-heading {
@@ -53,21 +75,6 @@
       font-weight: bold;
       margin-top: 80px;
       margin-bottom: 30px;
-    }
-
-    .left-image {
-      flex: 0.8;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .left-image img {
-      width: 90%;
-      height: auto;
-      object-fit: cover;
-      display: block;
-      border-radius: 8px;
     }
 
     @media (max-width: 768px) {
@@ -155,6 +162,11 @@
 
     <!-- Content + Image -->
     <section class="content-container">
+      <!-- Image -->
+      <div class="left-image">
+        <img src="../securus-new/images/securus.jpeg" alt="Event Security" />
+      </div>
+
       <!-- Text -->
       <section class="content">
         <p><strong>Event security specialists</strong> are among the most reputed and well-trained in the industry,
@@ -168,11 +180,6 @@
           <li>Executive Protection</li>
         </ul>
       </section>
-
-      <!-- Image -->
-      <div class="left-image">
-        <img src="../securus-new/images/securus.jpeg" alt="Event Security" />
-      </div>
     </section>
   </main>
 
@@ -186,4 +193,5 @@
   <script src="js/footer.js"></script>
 
 </body>
+
 </html>

@@ -25,7 +25,7 @@
 
     <style>
         .service-section {
-            max-width: 1500px;
+            max-width: 1400px;
             margin: 80px auto;
             padding: 20px;
         }
@@ -35,9 +35,10 @@
             color: red;
             font-weight: bold;
             margin-bottom: 40px;
-                        margin-top: 40px;
+            margin-top: 40px;
 
         }
+
 
         .service-content {
             display: flex;
@@ -46,17 +47,21 @@
             flex-wrap: wrap;
         }
 
+        .service-image {
+            order: 1;
+            /* Move image to the left */
+            flex: 0.8;
+            display: flex;
+            justify-content: center;
+        }
+
         .service-text {
+            order: 2;
+            /* Move text to the right */
             flex: 1.5;
             font-size: 1.1rem;
             line-height: 1.8;
             text-align: justify;
-        }
-
-        .service-image {
-            flex: 0.8;
-            display: flex;
-            justify-content: center;
         }
 
         .service-image img {
@@ -154,14 +159,19 @@
             <div class="service-content">
                 <div class="service-text">
                     <p>
-                        Physical guarding is a component of physical security that involves using security personnel to protect people,
-                        property, and assets from harm or loss. It encompasses a range of activities, including access control, surveillance,
-                        and response to incidents. Effective physical guarding requires a combination of human expertise and technology to
+                        Physical guarding is a component of physical security that involves using security personnel to
+                        protect people,
+                        property, and assets from harm or loss. It encompasses a range of activities, including access
+                        control, surveillance,
+                        and response to incidents. Effective physical guarding requires a combination of human expertise
+                        and technology to
                         deter, detect, and respond to threats.
                     </p>
                     <p>
-                        <strong>SECURUS</strong> offers professional and cost-effective Physical security services. We supply and manage
-                        security personnel on a 24-hour basis for large MNCs, Embassies, Financial establishments, Educational Institutions,
+                        <strong>SECURUS</strong> offers professional and cost-effective Physical security services. We
+                        supply and manage
+                        security personnel on a 24-hour basis for large MNCs, Embassies, Financial establishments,
+                        Educational Institutions,
                         Museums, Hotels, Commercial and Industrial buildings, as well as projects.
                     </p>
                 </div>
@@ -178,4 +188,5 @@
     <!-- Footer Script -->
     <script src="js/footer.js"></script>
 </body>
+
 </html>
