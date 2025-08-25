@@ -2388,7 +2388,7 @@ body {
 }
 
 .tagline {
-  font-size: 14px;
+  font-size: 17px;
   color: #35729e;
 }
 
@@ -2421,7 +2421,7 @@ body {
   align-items: flex-start;
   gap: 10px;
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 17px;
   color: #333;
   flex-grow: 1; /* Fill available height so cards align */
 }
