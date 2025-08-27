@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remote Monitoring | SECURUS</title>
+
+    <!--Header-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+
+    <style>
+        .service-section {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 20px;
+        }
+
+        .service-section h1 {
+            text-align: center;
+            color: red;
+            font-weight: bold;
+            margin-bottom: 40px;
+            margin-top: 40px;
+
+        }
+
+
+        .service-content {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .service-image {
+            order: 1;
+            /* Move image to the left */
+            flex: 0.8;
+            display: flex;
+            justify-content: center;
+        }
+
+        .service-text {
+            order: 2;
+            /* Move text to the right */
+            flex: 1.5;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .service-content {
+                flex-direction: column;
+            }
+
+            .service-text {
+                text-align: justify;
+            }
+
+            .service-image img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container-fluid px-3">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Logo" style="height: 70px;">
+                </a>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+                    <ul class="navbar-nav gap-4">
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
+                                <li><a class="dropdown-item" href="remote_monitoring.html">Remote Monitoring</a></li>
+                                <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
+                                <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Awards.html">Awards & Accreditations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="our_clients.html">Our Clients</a></li>
+                        <li class="nav-item"><a class="nav-link" href="career.html"> Careers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><img src="images/logo.png" alt="Logo" style="height: 40px;"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" data-bs-toggle="dropdown"
+                        aria-expanded="false">Our Services</a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
+                        <li><a class="dropdown-item" href="remote_monitoring.html">Remote Monitoring</a></li>
+                        <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
+                        <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="Awards.html">Awards & Accreditations</a></li>
+                <li class="nav-item"><a class="nav-link" href="our_clients.html">Our Clients</a></li>
+                <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="training.html">Security Training Courses</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <main>
+        <section class="service-section">
+            <h1>Remote Monitoring</h1>
+            <div class="service-content">
+                <div class="service-text">
+                    <p>
+                        Remote monitoring is the process of keeping track of systems, devices, or activities from a
+                        distance using technology. It allows data to be collected, analyzed, and viewed in real time
+                        without needing to be physically present. For example, in workplaces, remote monitoring helps
+                        track network performance, server health, or even employee systems to ensure smooth operations.
+                        In homes, it can mean using smart cameras, sensors, or apps to monitor security, energy usage,
+                        or even the health of elderly family members.
+                    </p>
+
+                    <p>
+                        It has become especially important in today’s world where efficiency and safety are priorities.
+                        Businesses rely on remote monitoring to detect issues early, prevent downtime, and reduce
+                        maintenance costs. On a personal level, it brings peace of mind by allowing people to keep an
+                        eye on their assets or loved ones anytime and anywhere. With the rise of IoT (Internet of
+                        Things) and cloud-based tools, remote monitoring is no longer just a luxury—it’s becoming an
+                        everyday necessity.
+                    </p>
+
+                </div>
+                <div class="service-image">
+                    <img src="../securus-new/images/securus.jpeg" alt="Physical Guarding">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Footer Script -->
+    <script src="js/footer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | SECURUS</title>
+
+
+  <!--Header-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet">
+
+
+  <style>
+    header {
+      background: #00316d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-height: 90vh;
+      object-fit: cover;
+      display: block;
+      border: 2px solid #000;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .about-section img {
+      flex: 1;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .about-text {
+      flex: 2;
+      min-width: 280px;
+      text-align: justify;
+    }
+
+    .mission-vision-values {
+      background-color: #00316d;
+      color: white;
+      padding: 60px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .mission-vision-values div {
+      flex: 1;
+      min-width: 250px;
+      max-width: 350px;
+    }
+
+    .mission-vision-values h3 {
+      margin-bottom: 15px;
+      text-align: left;
+      font-weight: bold;
+      color: aliceblue;
+    }
+
+    .mission-vision-values p {
+      margin: 0;
+      line-height: 1.6;
+      text-align: left;
+      color: rgb(245, 245, 243);
+    }
+
+    @media(max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+      <div class="container-fluid px-3">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Logo" style="height: 70px;">
+        </a>
+
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Desktop Nav -->
+        <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
+                <li><a class="dropdown-item" href="remote_monitoring.html">Remote Monitoring</a></li>
+                <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
+                <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="Awards.html">Awards & Accreditations</a></li>
+            <li class="nav-item"><a class="nav-link" href="our_clients.html">Our Clients</a></li>
+            <li class="nav-item"><a class="nav-link" href="career.html"> Careers</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="training.html">Security Training Courses</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Offcanvas Mobile Menu -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title"><img src="images/logo.png" alt="Logo" style="height: 40px;"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">Our Services</a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
+            <li><a class="dropdown-item" href="remote_monitoring.html">Remote Monitoring</a></li>
+            <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
+            <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="Awards.html">Awards & Accreditations</a></li>
+        <li class="nav-item"><a class="nav-link" href="our_clients.html">Our Clients</a></li>
+        <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="training.html">Security Training Courses</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Main Header -->
+  <main>
+
+    <div class="hero-image">
+      <img src="images/about/about-page-img-1.jpeg" alt="About Us Image">
+    </div>
+
+    <section class="about-section">
+      <img src="images/logo.png" alt="Company Logo">
+
+      <div class="about-text">
+        <p>Incorporated in 2009, SECURUS embraces an integrated approach to security, incorporating physical guarding,
+          remote monitoring, event security, in-house training, and security consultancy service for private entities.
+          Within 6 years, SECURUS had achieved a grading of S9 in EPPU, advancing our reach to both Government and
+          private entities in Singapore.</p>
+
+        <p>Focusing on training competency and operational capability, SECURUS ties up with relevant Government agencies
+          to bolster Government efforts to train and better equip security staff. In 2011, SECURUS was granted ATO
+          status and achieved ISO 9001 Status and Biz SAFE Level 4.</p>
+
+        <p>SECURUS actively works on the ideology that security could be better achieved through technology. Our
+          inauguration aimed to solve the high expectation for increased security in Singapore and we continually search
+          for new technologies to cater to the demand for innovative and advanced solutions. Our commitment has garnered
+          an ‘A’ grading in 2024 & 2025 by the Singapore Police Force, alongside several SSI awards.</p>
+
+        <p>It all began with the vision of advocating a mutually rewarding partnership in security. The demand for
+          security is a necessity under stringent requirements for safety-first purposes in various industries. With the
+          mission of securing people and assets through a comprehensive network of technological and human applications,
+          SECURUS cooperates with esteemed organizations like the Monetary Authority of Singapore, Land Transport
+          Authority, Singapore Grand Prix, Housing Development Board, National Institute of Education, Nanyang Academy
+          of Fine Arts, Stamford American School, Penta Ocean Construction Ltd, Mapletree Properties (eastern sector),
+          Orchid Country Club, Singapore Flyer, and Genting Centre (Resorts World Singapore HQ).</p>
+      </div>
+    </section>
+    <section class="mission-vision-values">
+      <div>
+        <h3>Our Mission</h3>
+        <p>Securing People and Assets through a comprehensive network of technological and human applications.</p>
+      </div>
+      <div>
+        <h3>Our Vision</h3>
+        <p>To be Your Partner of Choice in Security.</p>
+      </div>
+      <div>
+        <h3>Our Core Values</h3>
+        <p>Business Accountability<br>Stakeholder Driven<br>Technology Bias<br>Corporate Onus</p>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+  <script>
+    // Optional: Disable right-click like original file
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    // Optional: Prevent text selection like original file
+    document.addEventListener('selectstart', e => e.preventDefault());
+  </script>
+
+
+<!--footer-->
+<div id="footer-placeholder"></div>
+
+<!-- footer script -->
+<script src="js/footer.js"></script>
+
+
+</body>
+
+</html>

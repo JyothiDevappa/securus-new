@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Security Training Courses</title>
+
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Manrope', sans-serif !important; 
+    }
+
+    main {
+      margin-top: 120px;
+    }
+
+    .service-section {
+      max-width: 1400px;
+            margin: 80px auto;
+            padding: 20px;
+    }
+
+    .service-section h1 {
+    text-align: center;
+            color: red;
+            font-weight: bold;
+            margin-bottom: 40px;
+            margin-top: 40px;
+    }
+
+    .service-content {
+     display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+    }
+
+    .service-image {
+     order: 1;
+            /* Move image to the left */
+            flex: 0.8;
+            display: flex;
+            justify-content: center;
+    }
+
+    .service-image img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .service-text {
+      flex: 1.5;
+      font-size: 1.1rem;
+            line-height: 1.8;
+      text-align: justify;
+      order: 2; /* Text on right */
+    }
+    .service-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-family: 'Manrope', sans-serif;
+  text-align: justify;
+}
+
+
+    @media (max-width: 768px) {
+      .service-content {
+        flex-direction: column;
+        max-width: 100%;
+      }
+
+      .service-text {
+        text-align: justify;
+      }
+
+      .service-image img {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- Main Header -->
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+      <div class="container-fluid px-3">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Logo" style="height: 70px;" />
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
+                <li><a class="dropdown-item" href="remote_monitoring.html">Remote Monitoring</a></li>
+                <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
+                <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="Awards.html">Awards & Accreditations</a></li>
+            <li class="nav-item"><a class="nav-link" href="our_clients.html">Our Clients</a></li>
+            <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Offcanvas Mobile Menu -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title"><img src="images/logo.png" alt="Logo" style="height: 40px;" /></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
+            <li><a class="dropdown-item" href="remote_monitoring.html">Remote Monitoring</a></li>
+            <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
+            <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="Awards.html">Awards & Accreditations</a></li>
+        <li class="nav-item"><a class="nav-link" href="our_clients.html">Our Clients</a></li>
+        <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <main>
+    <section class="service-section">
+      <h1>Security Training Courses</h1>
+      <div class="service-content">
+        <div class="service-image">
+          <img src="../securus-new/images/training/training.jpeg" alt="Security Training" />
+        </div>
+        <div class="service-text">
+          <p>We started as a dedicated security training school, committed to teaching essential physical and digital
+            safety skills for today’s world.</p>
+          <p>Recognizing the increasing convergence of technology and human factors, we’ve broadened our curriculum to
+            include cutting-edge AI, cybersecurity, and emotional intelligence (EQ) courses.</p>
+          <p>Our integrated approach—blending security, AI, cyber, and emotional skills—prepares learners to confront
+            complex challenges with confidence.</p>
+          <p>We partner with industry veterans and tech leaders to keep our content up-to-date, practical, and aligned
+            with emerging trends.</p>
+          <p>Looking ahead, we’re committed to lifelong learning: constantly expanding into new domains while
+            maintaining the same standard of excellence.</p>
+          <p>Whether you seek technical mastery, intelligent systems knowledge, or emotional agility, our school equips
+            you for the future.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script src="js/footer.js"></script>
+</body>
+
+</html>

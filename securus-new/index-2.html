@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Mirrored from thememxpro.com/php-template/hactora/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 May 2025 17:24:51 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Securus || Be Safe and Secured</title>
+    <!-- Stylesheets -->
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- search botton-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+
+  
+  <!--Header-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+
+
+    <style>
+        .video-banner-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .content-outer {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            padding: 0 15px;
+        }
+
+        .banner-big-title {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .logo-slider {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .logo-track {
+            display: flex;
+            width: max-content;
+            animation: scrollLeft 40s linear infinite;
+        }
+
+        .logo-track img {
+            height: 100px;
+            width: auto;
+            object-fit: contain;
+            margin: 0 30px;
+        }
+
+        @keyframes scrollLeft {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Center team cards on all devices */
+        .team-one-section .row {
+            justify-content: center;
+            /* Bootstrap flex alignment */
+        }
+
+        /* Make each team card centered on mobile */
+        .team-one-section .col-md-6 {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* expirence team members */
+        @media (max-width: 575.98px) {
+            .team-one-section .team-one-single {
+                width: 90%;
+                /* shrink slightly to avoid touching edges */
+            }
+        }
+
+
+
+
+        @media (max-width: 767.98px) {
+            .funfacts-one-section .col-md-6 {
+                margin-bottom: 30px;
+                /* this creates real gap between rows */
+            }
+
+            .funfacts-one-single {
+                width: 90%;
+                margin: 0 auto;
+                padding: 25px 15px;
+                border-radius: 12px;
+                background-color: #fff;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+                text-align: center;
+            }       
+        }
+
+        .career-opportunities-section {
+  padding: 60px 0;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.career-image {
+  height: 450px; /* adjust as needed */
+  width: 100%;
+  object-fit: cover; /* keeps aspect ratio without distortion */
+}
+
+
+.career-left {
+  position: relative;
+  text-align: center;
+}
+
+.career-text-overlay {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.career-text-overlay h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.career-text-overlay .highlight {
+  color: #00bcd4;
+}
+
+.career-box {
+  background-color: #0a2540;
+  padding: 30px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.career-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.career-list li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 0;
+}
+
+.career-list h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.career-list p {
+  margin: 4px 0 0;
+  font-size: 15px;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .career-text-overlay h2 {
+    font-size: 20px;
+  }
+  .career-box {
+    margin-top: 30px;
+  }
+}
+/* Tablet View */
+@media (max-width: 992px) {
+  .career-image {
+    max-height: 300px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+  .career-image {
+    max-height: 200px;
+  }
+}
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- Main Header -->
+<header class="main-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container-fluid px-3">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Logo" style="height: 70px;">
+      </a>
+
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Desktop Nav -->
+      <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
+              <li><a class="dropdown-item" href="#">Remote Monitoring</a></li>
+              <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
+              <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="Awards.html">Awards & Accreditations</a></li>
+          <li class="nav-item"><a class="nav-link" href="our_clients.html">Our Clients</a></li>
+          <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="training.html">Security Training Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Offcanvas Mobile Menu -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title"><img src="images/logo.png" alt="Logo" style="height: 40px;"></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+          <li><a class="dropdown-item" href="#">Physical Guarding</a></li>
+          <li><a class="dropdown-item" href="#">Remote Monitoring</a></li>
+          <li><a class="dropdown-item" href="#">Event Security</a></li>
+          <li><a class="dropdown-item" href="#">Integrated Training</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Awards & Accreditations</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Our Clients</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Security Training Courses</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+ <!-- End Main Header -->
+
+
+            <!-- Banner Section -->
+<section class="banner-section wow fadeIn">
+    <div class="video-banner-wrapper" style="background: url('images/index.jpeg') no-repeat center center / cover;">
+        <div class="content-outer">
+            <div class="content-box">
+                <div class="inner">
+                    <h1>Factory is <br> equipped with the <br>latest <span>technology</span></h1>
+                    <div class="text">
+                        Manufacturing Technology Supports Factories around the World. <br>
+                        Factories are at the heart of manufacturing.
+                    </div>
+                    <div class="link-box">
+                        <a href="about.html" class="theme-btn btn-style-one"><span>About Us</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="banner-big-title" data-parallax='{"x": 200}'>Factory</div> -->
+    </div>
+</section>
+
+            <!-- End Bnner Section --><!-- Start Features Two Section -->
+    
+
+
+
+            <section class="features-two-section">
+    <div class="container">
+        <h2 class="section-title">Best Security Services Fitted To Your Needs</h2>
+        <div class="row">
+            <div class="service-card">
+                <img src="images/imagess/services2.jpg" alt="Physical Guarding">
+                <h3>Physical Guarding</h3>
+                <p>The very core facet of security is manpower; We, at SECURUS believe in a holistic approach to this aspect.</p>
+                <button class="read-more-btn">Read More</button>
+            </div>
+            <div class="service-card">
+                <img src="images/imagess/remote-monitoring.jpg" alt="Remote Monitoring">
+                <h3>Remote Monitoring</h3>
+                <p>SECURUS will customise a remote monitoring system incorporating the latest in security technology specifically for your esteemed site.</p>
+                <button class="read-more-btn">Read More</button>
+            </div>
+            <div class="service-card">
+                <img src="images/imagess/services3.jpg" alt="Event Security">
+                <h3>Event Security</h3>
+                <p>When large crowds are expected, security will be of prime importance where an event is being hosted.</p>
+                <button class="read-more-btn">Read More</button>
+            </div>
+            <div class="service-card">
+                <div class="icon-box">
+                    <span class="flaticon-team"></span>
+                </div>
+                <h3>Integrated Training</h3>
+                <p>Securus strongly believe in the importance of human capital... ever since conducted in-house training for all it's employees.</p>
+                <button class="read-more-btn">Read More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+            <!-- End Features Two Section --> <!-- Start About Two Section -->
+            <section class="about-tow-section about-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="about-two-left-content wow slideInLeft" data-wow-delay="100ms">
+                                <div class="about-two-sec-image">
+                                    <div class="about-two-sec-image-bg-1"
+                                        style="background-image: url(images/about/about-2--pattern-1.png)"></div>
+                                    <div class="about-two-sec-image-bg-2"
+                                        style="background-image: url(images/about/about-2--pattern-2.png)"></div>
+                                    <img src="images/about/about-page-img-1.jpeg" alt="" style="margin-top: 65px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="about-two-right-content">
+                                <div class="about-two-title">
+                                    <h4 class="sub-title-shape-left section_title-subheading">About Our Company</h4>
+                                    <h2>Welcome to Securus </h2>
+                                    <p class="about-two-title-text">Incorporated in 2009, SECURUS embraces an integrated
+                                        approach to security, incorporating physical guarding, remote monitoring, event
+                                        security, in-house training and security consultancy service for private
+                                        entities. Within 6 years, SECURUS had achieved a grading of S9 in EPPU, this had
+                                        further advanced our reach to both Government and private entities in Singapore.
+                                        Focusing on training competency and operational capability, SECURUS ties up with
+                                        relevant Government agencies to bolster Government efforts to train and better
+                                        equip security staff. In 2011, SECURUS was granted ATO status and achieved ISO
+                                        9000 Status and Biz SAFE Level 4.</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="about-tow-experience-years">
+                                            <div class="about-tow-experience-years-icon">
+                                                <span class="flaticon-check"></span>
+                                            </div>
+                                            <div class="about-tow-experience-years-text">
+                                                <h2>100% Client <br> Satisfaction </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="about-tow-experience-years">
+                                            <div class="about-tow-experience-years-icon">
+                                                <span class="flaticon-check"></span>
+                                            </div>
+                                            <div class="about-tow-experience-years-text">
+                                                <h2>World Class <br> Worker</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- End About Two Section --><!--Start Funfacts One Section -->
+            <section class="funfacts-one-section" style="background-image: url(images/background/funfact-1-bg.jpg)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <!--Funfacts One Single-->
+                            <div class="funfacts-one-single wow fadeInUp" data-wow-delay="100ms">
+                                <div class="icon">
+                                    <span class="flaticon-like"></span>
+                                </div>
+                                <div class="content count-box">
+                                    <h2>
+                                        <span class="timer" data-from="1" data-to="2009" data-speed="5000"
+                                            data-refresh-interval="50">100+</span>
+                                    </h2>
+                                    <p>Year Founded</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <!--Funfacts One Single-->
+                            <div class="funfacts-one-single wow fadeInUp" data-wow-delay="200ms">
+                                <div class="icon">
+                                    <span class="flaticon-architect"></span>
+                                </div>
+                                <div class="content count-box">
+                                    <h2>
+                                        <span class="timer" data-from="1" data-to="780" data-speed="5000"
+                                            data-refresh-interval="50">200+</span>
+                                    </h2>
+                                    <p>Number of Clients Served</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <!--Funfacts One Single-->
+                            <div class="funfacts-one-single wow fadeInUp" data-wow-delay="300ms">
+                                <div class="icon">
+                                    <span class="flaticon-medal"></span>
+                                </div>
+                                <div class="content count-box">
+                                    <h2>
+                                        <span class="timer" data-from="1" data-to="189" data-speed="5000"
+                                            data-refresh-interval="50">1021</span>
+                                    </h2>
+                                    <p>Number of Sites </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <!--Funfacts One Single-->
+                            <div class="funfacts-one-single wow fadeInUp" data-wow-delay="300ms">
+                                <div class="icon">
+                                    <span class="flaticon-medal"></span>
+                                </div>
+                                <div class="content count-box">
+                                    <h2>
+                                        <span class="timer" data-from="1" data-to="189" data-speed="5000"
+                                            data-refresh-interval="50">189</span>
+                                    </h2>
+                                    <p>Number of Officers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End Funfacts One Section --> 
+
+
+
+
+
+
+
+
+
+
+
+  <!-- End Features Two Section --> <!-- Start About Two Section -->
+
+  <section class="careers-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left: Team Image -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="career-image-wrapper">
+<img src="images/imagess/services3.jpg" alt="Security Team" class="img-fluid rounded shadow-sm career-image">
+        </div>
+      </div>
+
+      <!-- Right: Career Info -->
+      <div class="col-md-6">
+        <div class="career-content p-4 rounded shadow">
+          <h3 class="career-heading mb-4">Career Opportunities</h3>
+          <ul class="career-list">
+            <li>
+              <div class="job-title">Chief Security Officer (CSO)</div>
+              <div class="job-salary">Salary: up to $3,800/-</div>
+            </li>
+            <li>
+              <div class="job-title">Senior Security Supervisor (SSS)</div>
+              <div class="job-salary">Salary: up to $3,500/-</div>
+            </li>
+            <li>
+              <div class="job-title">Security Supervisor (SS)</div>
+              <div class="job-salary">Salary: up to $3,200/-</div>
+            </li>
+            <li>
+              <div class="job-title">Senior Security Officer (SSO)</div>
+              <div class="job-salary">Salary: up to $2,700/-</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <!--Start Team One Section -->
+            <section class="team-one-section two">
+                <div class="container">
+                    <div class="thm-section-title text-center">
+                        <h4 class="sub-title-shape-left section_title-subheading">Our Management </h4>
+                        <h2>Experience  Members</h2>
+                    </div>
+
+                    <div class="row justify-content-center"> <!-- Added justify-content-center to center cards -->
+
+
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <!--Team One Single-->
+                            <div class="team-one-single wow fadeInLeft" data-wow-delay="200ms">
+                                <div class="team-one-img">
+                                    <img src="images/team/Director.jpeg" alt="">
+                                    <div class="team-one-hover">
+                                        <div class="team-one-social">
+                                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-one-content">
+                                    <h3>Malathi Balakrishnan</h3>
+                                    <p>Director</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <!--Team One Single-->
+                            <div class="team-one-single wow fadeInLeft" data-wow-delay="300ms">
+                                <div class="team-one-img">
+                                    <img src="images/team/ASSit.jpeg" alt="">
+                                    <div class="team-one-hover">
+                                        <div class="team-one-social">
+                                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-one-content">
+                                    <h3>Aharvin Sandrasegran</h3>
+                                    <p>Managing Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            
+
+
+            <!-- ===================== Prestigious Clients Section Start ===================== -->
+
+            <section class="clients-section text-center py-5">
+                <div class="container">
+                    <p class="top-subtitle">OUR PORTFOLIO</p>
+                    <h2 class="section-title">Some Of Our Prestigious Clients...</h2>
+                    <div class="divider"></div>
+
+                    <div class="logo-slider">
+                        <div class="logo-track">
+                            <img src="images/brand/brand-1.jpeg" alt="Logo 1">
+                            <img src="images/brand/brand-2.jpeg" alt="Logo 2">
+                            <img src="images/brand/brand-3.jpeg" alt="Logo 3">
+                            <img src="images/brand/brand-4.jpeg" alt="Logo 4">
+                            <img src="images/brand/brand-5.jpeg" alt="Logo 5">
+                            <img src="images/brand/brand-6.jpeg" alt="Logo 6">
+                            <img src="images/brand/brand-7.jpeg" alt="Logo 7">
+                            <img src="images/brand/brand-8.jpeg" alt="Logo 8">
+
+                            <!-- Duplicate for loop effect -->
+                            <img src="images/brand/brand-1.jpeg" alt="Logo 1">
+                            <img src="images/brand/brand-2.jpeg" alt="Logo 2">
+                            <img src="images/brand/brand-3.jpeg" alt="Logo 3">
+                            <img src="images/brand/brand-4.jpeg" alt="Logo 4">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+<section class="awards-section">
+  <h2>Awards & Accolades</h2>
+
+  <div class="swiper awards-swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides: replace these images with your certificates -->
+      <div class="swiper-slide"><img src="images/awards/award-img1.jpg" alt="Certificate 1"></div>
+      <div class="swiper-slide"><img src="images/awards/award-img2.jpg" alt="Certificate 2"></div>
+      <div class="swiper-slide"><img src="images/awards/award-img3.jpg" alt="Certificate 3"></div>
+      <div class="swiper-slide"><img src="images/awards/award-img4.jpg" alt="Certificate 4"></div>
+      <div class="swiper-slide"><img src="images/awards/award-img5.jpg" alt="Certificate 5"></div>
+      <div class="swiper-slide"><img src="images/awards/award-img6.jpg" alt="Certificate 6"></div>
+
+
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+           
+
+</div>
+
+
+
+
+
+
+
+        <!-- /.mobile-nav__wrapper --><!--Scroll to top-->
+        <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fas fa-arrow-up"></span></div>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/appear.js"></script>
+        <script src="js/jquery.countTo.js"></script>
+        <script src="js/isotope.js"></script>
+        <script src="js/owl.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script src="js/custom.js"></script>
+
+
+
+
+
+
+<script>
+  const swiper = new Swiper('.awards-swiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 4,
+    spaceBetween: 5,
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
+</script>
+
+
+<!--footer-->
+<div id="footer-placeholder"></div>
+
+<!-- footer script -->
+<script src="js/footer.js"></script>
+
+</body>
+
+
+
+</html>
