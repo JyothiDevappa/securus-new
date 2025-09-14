@@ -7,95 +7,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Security Training Courses</title>
 
-  <link href="css/bootstrap.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
-  <link href="css/responsive.css" rel="stylesheet" />
 
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet" />
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!--Header-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Manrope', sans-serif !important; 
-    }
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
-    main {
-      margin-top: 120px;
-    }
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
 
-    .service-section {
-      max-width: 1400px;
-            margin: 80px auto;
-            padding: 20px;
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet">
 
-    .service-section h1 {
+</head>
+<style>
+  .service-section {
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 20px;
+  }
+
+  .service-section h1 {
     text-align: center;
-            color: red;
-            font-weight: bold;
-            margin-bottom: 40px;
-            margin-top: 40px;
-    }
+    color: red;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 40px;
 
+  }
+
+
+  .service-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .service-image {
+    order: 1;
+    /* Move image to the left */
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+  }
+
+  .service-text {
+    flex: 2;
+    text-align: justify;
+
+  }
+
+  .service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+
+  
     .service-content {
-     display: flex;
-            gap: 30px;
-            align-items: center;
-            flex-wrap: wrap;
-    }
-
-    .service-image {
-     order: 1;
-            /* Move image to the left */
-            flex: 0.8;
-            display: flex;
-            justify-content: center;
-    }
-
-    .service-image img {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
+      flex-direction: column;
+      margin-top: 0px;
     }
 
     .service-text {
-      flex: 1.5;
-      font-size: 1.1rem;
-            line-height: 1.8;
       text-align: justify;
-      order: 2; /* Text on right */
     }
-    .service-text p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  font-family: 'Manrope', sans-serif;
-  text-align: justify;
+
+    .service-image img {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 768px) {
+  .service-section {
+    margin: 30px auto;   /* reduce top/bottom gap only on mobile */
+    padding: 10px;       /* optional, less padding for small screens */
+  }
+
+  .service-section h1 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
 }
 
-
-    @media (max-width: 768px) {
-      .service-content {
-        flex-direction: column;
-        max-width: 100%;
-      }
-
-      .service-text {
-        text-align: justify;
-      }
-
-      .service-image img {
-        width: 80%;
-      }
-    }
-  </style>
-</head>
+</style>
 
 
 <body>
@@ -164,17 +170,42 @@
     <section class="service-section">
       <h1>Security Training Courses</h1>
       <div class="service-content">
+        <div class="service-text">
+          <p>
+            This security course in Singapore trains participants in the vital skills needed to offer guard and patrol
+            services and utilize security equipment. Participants will discover how to implement suitable processes for
+            security tasks and efficiently oversee access control systems. This training equips individuals for
+            positions in security officer services, ensuring they are skilled at overseeing security operations.
+          </p>
+          <p>
+            Upon completing this security officer course, participants will be prepared to secure their security license
+            via the GoBusiness licensing portal and thrive as security officers in Singapore. We began as a focused
+            security training institution, dedicated to providing crucial physical and digital safety skills relevant to
+            today's environment.
+          </p>
+          <p>
+            Acknowledging the growing blend of technology and human elements, we have expanded our curriculum to
+            incorporate advanced AI, cybersecurity, and emotional intelligence (EQ) courses. Our unified strategy —
+            merging security, AI, cyber, and emotional intelligence — equips learners to tackle intricate issues with
+            confidence.
+          </p>
+          <p>
+            We collaborate with experienced professionals and technology experts to ensure our content remains current,
+            applicable, and in tune with new developments. In the future, we're committed to continuous education:
+            consistently venturing into new areas while upholding our standard of excellence.
+          </p>
+          <p>
+            Whether you pursue technical expertise, understanding of intelligent systems, or emotional resilience, our
+            institution prepares you for what lies ahead.
+          </p>
+          <p>Contact us for further enquiries: training@securus.com.sg</p>
+        </div>
         <div class="service-image">
           <img src="../securus-new/images/training/training.jpeg" alt="Security Training" />
-        </div>
-        <div class="service-text">
-          <p>This security course in Singapore trains participants in the vital skills needed to offer guard and patrol services and utilize security equipment. Participants will discover how to implement suitable processes for security tasks and efficiently oversee access control systems. This training equips individuals for positions in security officer services, ensuring they are skilled at overseeing security operations. Upon completing this security officer course, participants will be prepared to secure their security license via the GoBusiness licensing portal and thrive as security officers in Singapore. We began as a focused security training institution, dedicated to providing crucial physical and digital safety skills relevant to today's environment. Acknowledging the growing blend of technology and human elements, we have expanded our curriculum to incorporate advanced AI, cybersecurity, and emotional intelligence (EQ) courses. Our unified strategy-merging security, AI, cyber, and emotional intelligence-equips learners to tackle intricate issues with confidence . We collaborate with experienced professionals and technology experts to ensure our content remains current, applicable, and in tune with new developments. In the future, we're committed to continuous education: consistently venturing into new areas while upholding our standard of excellence. Whether you pursue technical expertise, understanding of intelligent systems, or emotional resilience, our institution prepares you for what lies ahead. </p>
-          <p>Contact us for further enquiries inquiries  : training@securus.com.sg</p>
         </div>
       </div>
     </section>
   </main>
-
   <!-- Footer -->
   <div id="footer-placeholder"></div>
   <script src="js/footer.js"></script>
