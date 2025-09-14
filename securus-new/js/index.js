@@ -52,6 +52,4 @@
 
 
       
-      setTimeout(function () {
-        document.getElementById("heading").style.display = "block";
-      }, 5000); // 5000ms = 5 seconds
+    
