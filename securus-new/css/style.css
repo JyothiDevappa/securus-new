@@ -2328,22 +2328,7 @@ body {
   color: black;
 }
 
-@media (max-width: 640px) {
-  .awards-swiper .swiper-slide {
-    display: flex;
-    justify-content: center;
-  }
 
-  .awards-swiper .swiper-slide img {
-    max-width: 90vw;   /* Make it fill most of the screen without touching edges */
-    height: auto;      /* Keep good proportions */
-  }
-}
-@media (max-width: 640px) {
-  .awards-swiper .swiper-slide {
-    flex: 0 0 100% !important;   /* Force each slide to occupy 100% width on mobile */
-  }
-}
 
 
 
