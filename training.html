@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Security Training Courses</title>
 
-
   <!--Header-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -39,9 +38,7 @@
     font-weight: bold;
     margin-bottom: 40px;
     margin-top: 40px;
-
   }
-
 
   .service-content {
     display: flex;
@@ -51,17 +48,16 @@
   }
 
   .service-image {
-    order: 1;
-    /* Move image to the left */
+    order: 1; /* Image comes first (left side) */
     flex: 0.8;
     display: flex;
     justify-content: center;
   }
 
   .service-text {
+    order: 2; /* Content comes second (right side) */
     flex: 2;
     text-align: justify;
-
   }
 
   .service-image img {
@@ -72,8 +68,6 @@
   }
 
   @media (max-width: 768px) {
-
-  
     .service-content {
       flex-direction: column;
       margin-top: 0px;
@@ -81,6 +75,11 @@
 
     .service-text {
       text-align: justify;
+      order: 2;
+    }
+
+    .service-image {
+      order: 1;
     }
 
     .service-image img {
@@ -89,18 +88,17 @@
   }
 
   @media (max-width: 768px) {
-  .service-section {
-    margin: 30px auto;   /* reduce top/bottom gap only on mobile */
-    padding: 10px;       /* optional, less padding for small screens */
-  }
+    .service-section {
+      margin: 30px auto;
+      padding: 10px;
+    }
 
-  .service-section h1 {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    font-size: 22px;
+    .service-section h1 {
+      margin-top: 15px;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
   }
-}
-
 </style>
 
 
@@ -170,6 +168,9 @@
     <section class="service-section">
       <h1>Security Training Courses</h1>
       <div class="service-content">
+        <div class="service-image">
+          <img src="../securus-new/images/training/training.jpeg" alt="Security Training" />
+        </div>
         <div class="service-text">
           <p>
             This security course in Singapore trains participants in the vital skills needed to offer guard and patrol
@@ -200,9 +201,6 @@
           </p>
           <p>Contact us for further enquiries: training@securus.com.sg</p>
         </div>
-        <div class="service-image">
-          <img src="../securus-new/images/training/training.jpeg" alt="Security Training" />
-        </div>
       </div>
     </section>
   </main>
@@ -211,4 +209,5 @@
   <script src="js/footer.js"></script>
 </body>
 
-</html>
+</html
+>
