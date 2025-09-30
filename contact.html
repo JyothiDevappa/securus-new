@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact || Securus</title>
+
+  <!-- Stylesheets -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Responsive Meta -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Header-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+ 
+</head>
+<style>
+   /* form {
+      background-color: #ffffff;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-top: 70px;
+    } */
+form {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin: 70px auto; /* centers it */
+  max-width: 900px;  /* limits width */
+}
+
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+    max-width: 95%; /* mobile-friendly */
+  }
+}
+
+    form h2 {
+      font-size: 28px;
+      color: #003366;
+    }
+
+    form p {
+      color: #333;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #ad1c18;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .career-box {
+        flex-direction: column;
+      }
+      .career-text-overlay h2 {
+        font-size: 20px;
+      }
+    }
+
+  </style>
+<body>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+      <div class="container-fluid px-3">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Logo" style="height: 70px;">
+        </a>
+
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Desktop Nav -->
+        <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
+                <li><a class="dropdown-item" href="remote_monitoring.html">Remote Monitoring</a></li>
+                <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
+                <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="Awards.html">Awards & Accreditations</a></li>
+            <li class="nav-item"><a class="nav-link" href="our_clients.html">Our Clients</a></li>
+            <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="Event_Security.html">Security Training Courses</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Offcanvas Mobile Menu -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title"><img src="images/logo.png" alt="Logo" style="height: 40px;"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">Our Services</a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
+            <li><a class="dropdown-item" href="remote_monitoring.html">Remote Monitoring</a></li>
+            <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
+            <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="Awards.html">Awards & Accreditations</a></li>
+        <li class="nav-item"><a class="nav-link" href="our_clients.html">Our Clients</a></li>
+        <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="training.html">Security Training Courses</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Main Header -->
+
+
+<section>
+<form>
+      <h2>Send Us a Message</h2>
+      <p>Please fill up the form below for any enquiries about our products and services. We will get in touch with you <strong style="color: #0066cc">soon</strong>.</p>
+
+      <input type="text" placeholder="Full Name*" required>
+      <input type="tel" placeholder="Phone/Mobile*" required>
+      <input type="email" placeholder="Email*" required>
+
+      <div style="display: flex; gap: 10px;">
+        <input type="text" placeholder="Job Description" style="flex: 1;">
+        <input type="text" placeholder="Company Name" style="flex: 1;">
+      </div>
+
+      <div style="display: flex; gap: 10px;">
+        <select required style="flex: 1;">
+          <option value="">Country*</option>
+          <option>India</option>
+          <option>USA</option>
+          <option>UK</option>
+        </select>
+
+        <select required style="flex: 1;">
+          <option value="">Enquiry Type*</option>
+          <option>Product</option>
+          <option>Service</option>
+          <option>Support</option>
+        </select>
+      </div>
+
+      <select required>
+        <option value="">How do you know about us*</option>
+        <option>Google</option>
+        <option>Friend</option>
+        <option>Social Media</option>
+      </select>
+
+      <textarea placeholder="Message" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </div>
+
+</section>
+  
+  <!-- Google Map Section -->
+  <section class="google_map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.872416774504!2d103.74013485845263!3d1.3336200999999965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da13b8ab268419%3A0x3c89b1e23c87b893!2s130%20Jurong%20Gateway%20Rd%2C%20%2304-221%2C%20Singapore%20600130!5e0!3m2!1sen!2sin!4v1721805423021!5m2!1sen!2sin"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  
+  <!-- Mobile Menu Placeholder -->
+  <div class="mobile-menu close-menu">
+    <nav class="menu-box">
+      <ul class="navigation"></ul>
+    </nav>
+  </div>
+
+  <div class="nav-overlay"></div>
+
+  
+
+
+<!--footer-->
+<div id="footer-placeholder"></div>
+
+<!-- footer script -->
+<script src="js/footer.js"></script>
+
+</body>
+
+</html>

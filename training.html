@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Security Training Courses</title>
+
+  <!--Header-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet">
+
+</head>
+<style>
+  .service-section {
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 20px;
+  }
+
+  .service-section h1 {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .service-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .service-image {
+    order: 1; /* Image comes first (left side) */
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+  }
+
+  .service-text {
+    order: 2; /* Content comes second (right side) */
+    flex: 2;
+    text-align: justify;
+  }
+
+  .service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .service-content {
+      flex-direction: column;
+      margin-top: 0px;
+    }
+
+    .service-text {
+      text-align: justify;
+      order: 2;
+    }
+
+    .service-image {
+      order: 1;
+    }
+
+    .service-image img {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .service-section {
+      margin: 30px auto;
+      padding: 10px;
+    }
+
+    .service-section h1 {
+      margin-top: 15px;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+  }
+</style>
+
+
+<body>
+  <!-- Main Header -->
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+      <div class="container-fluid px-3">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Logo" style="height: 70px;" />
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
+                <li><a class="dropdown-item" href="remote_monitoring.html">Remote Monitoring</a></li>
+                <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
+                <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="Awards.html">Awards & Accreditations</a></li>
+            <li class="nav-item"><a class="nav-link" href="our_clients.html">Our Clients</a></li>
+            <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Offcanvas Mobile Menu -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title"><img src="images/logo.png" alt="Logo" style="height: 40px;" /></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Physical_Guarding.html">Physical Guarding</a></li>
+            <li><a class="dropdown-item" href="remote_monitoring.html">Remote Monitoring</a></li>
+            <li><a class="dropdown-item" href="Event_Security.html">Event Security</a></li>
+            <li><a class="dropdown-item" href="training.html">Integrated Training</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="Awards.html">Awards & Accreditations</a></li>
+        <li class="nav-item"><a class="nav-link" href="our_clients.html">Our Clients</a></li>
+        <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <main>
+    <section class="service-section">
+      <h1>Security Training Courses</h1>
+      <div class="service-content">
+        <div class="service-image">
+          <img src="../securus-new/images/training/training.jpeg" alt="Security Training" />
+        </div>
+        <div class="service-text">
+          <p>
+            This security course in Singapore trains participants in the vital skills needed to offer guard and patrol
+            services and utilize security equipment. Participants will discover how to implement suitable processes for
+            security tasks and efficiently oversee access control systems. This training equips individuals for
+            positions in security officer services, ensuring they are skilled at overseeing security operations.
+          </p>
+          <p>
+            Upon completing this security officer course, participants will be prepared to secure their security license
+            via the GoBusiness licensing portal and thrive as security officers in Singapore. We began as a focused
+            security training institution, dedicated to providing crucial physical and digital safety skills relevant to
+            today's environment.
+          </p>
+          <p>
+            Acknowledging the growing blend of technology and human elements, we have expanded our curriculum to
+            incorporate advanced AI, cybersecurity, and emotional intelligence (EQ) courses. Our unified strategy —
+            merging security, AI, cyber, and emotional intelligence — equips learners to tackle intricate issues with
+            confidence.
+          </p>
+          <p>
+            We collaborate with experienced professionals and technology experts to ensure our content remains current,
+            applicable, and in tune with new developments. In the future, we're committed to continuous education:
+            consistently venturing into new areas while upholding our standard of excellence.
+          </p>
+          <p>
+            Whether you pursue technical expertise, understanding of intelligent systems, or emotional resilience, our
+            institution prepares you for what lies ahead.
+          </p>
+          <p>Contact us for further enquiries: training@securus.com.sg</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script src="js/footer.js"></script>
+</body>
+
+</html
+>
