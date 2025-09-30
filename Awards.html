@@ -73,65 +73,19 @@
     height: auto;
   }
 
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 25px;
-      margin-top: 80px;
-      margin-bottom: 40px;
-    }
-
-    .certificate-grid {
-      gap: 20px;
-    }
-
-    .card {
-      width: 45%;
-      /* 2 cards in one row */
-    }
-
-    p {
-      font-size: 14px;
-      line-height: 1.6;
-      padding: 0 15px;
-      text-align: justify;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .awards-swiper .swiper-slide {
-      display: flex;
-      justify-content: center;
-      flex: 0 0 100% !important;
-      /* Force each slide to occupy 100% width on mobile */
-
-    }
-
-    .awards-swiper .swiper-slide img {
-      max-width: 90vw;
-      height: auto;
-      /* Keep good proportions */
-    }
-  }
-
 
   .certificate-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* 4 per row */
     gap: 25px;
-    /* gap between rows & columns */
     justify-items: center;
   }
 
   .cert-card {
     width: 250px;
-    /* bigger width */
     height: 200px;
-    /* bigger height */
     padding: 10px;
-    /* space inside card */
     background: #f9f9f9;
-    /* light card background */
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -143,9 +97,33 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* show full image without cropping */
     display: block;
   }
+
+
+  @media (max-width: 768px) {
+  .certificate-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 10px; 
+    justify-items: center;
+    padding: 0 10px; /* prevent horizontal overflow */
+  }
+
+  .cert-card {
+    width: 100%;      /* fill the grid column */
+    height: auto;      /* scale height automatically */
+    padding: 5px;
+  }
+
+  .cert-card img {
+    width: 100%;
+    height: auto;      /* maintain aspect ratio */
+    object-fit: contain;
+    display: block;
+  }
+}
+
+
 </style>
 
 <body>
